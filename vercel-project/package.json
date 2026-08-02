@@ -4,5 +4,8 @@
   "private": true,
   "dependencies": {
     "@vercel/kv": "^1.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^58.4.4"
   }
 }
