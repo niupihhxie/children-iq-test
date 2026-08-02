@@ -1,15 +1,15 @@
 {
-  "total": 3,
+  "total": 4,
   "daily": {
-    "2026-08-02": 3
+    "2026-08-02": 4
   },
   "ips": [
     "141.11.146.65"
   ],
-  "totalRevenue": 1,
-  "totalPayments": 1,
+  "totalRevenue": 2,
+  "totalPayments": 2,
   "dailyRevenue": {
-    "2026-08-02": 1
+    "2026-08-02": 2
   },
   "paymentIPs": [
     "141.11.146.65"
