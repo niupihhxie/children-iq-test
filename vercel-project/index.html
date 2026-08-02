@@ -634,6 +634,12 @@ body {
 .modal-actions { display: flex; gap: 10px; }
 .modal-actions .btn { flex: 1; }
 .pay-done-btn { background: #07C160; color: #fff; }
+.pay-code { font-size: 28px; font-weight: 800; letter-spacing: 6px; color: var(--primary); text-align: center; margin: 12px 0; padding: 8px; background: #FFF8E1; border-radius: 8px; border: 2px dashed var(--primary); }
+.pay-code-label { font-size: 12px; color: var(--text-secondary); text-align: center; margin-bottom: 4px; }
+.pay-code-input { display: none; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 12px; }
+.pay-code-input input { width: 160px; padding: 10px 16px; font-size: 22px; text-align: center; letter-spacing: 6px; border: 2px solid var(--border); border-radius: 12px; outline: none; }
+.pay-code-input input:focus { border-color: var(--primary); }
+.pay-code-error { font-size: 12px; color: var(--danger); display: none; }
 
 /* Responsive */
 @media (max-width: 360px) {
@@ -1468,7 +1474,16 @@ function isTipsUnlocked() {
   return localStorage.getItem('tips_unlocked') === '1';
 }
 
+let payVerifyCode = '';
+
 function showPayModal() {
+  payVerifyCode = String(Math.floor(1000 + Math.random() * 9000));
+  document.getElementById('payCode').textContent = payVerifyCode;
+  document.getElementById('payCodeInput').style.display = 'none';
+  document.getElementById('payConfirmBtn').textContent = '✅ 我已支付 1 元';
+  document.getElementById('payConfirmBtn').onclick = confirmPay;
+  document.getElementById('payCodeError').style.display = 'none';
+  document.getElementById('payCodeField').value = '';
   document.getElementById('payModal').classList.add('active');
   selectPay('alipay');
 }
@@ -1489,19 +1504,32 @@ function selectPay(method) {
 }
 
 function confirmPay() {
-  localStorage.setItem('tips_unlocked', '1');
-  closePayModal();
-  // Re-render current report if available
-  if (state.currentReport) {
-    renderReport(state.currentReport);
+  document.getElementById('payCodeInput').style.display = 'flex';
+  document.getElementById('payConfirmBtn').textContent = '🔓 确认解锁';
+  document.getElementById('payConfirmBtn').onclick = verifyPayCode;
+  document.getElementById('payCodeError').style.display = 'none';
+  document.getElementById('payCodeField').focus();
+}
+
+function verifyPayCode() {
+  const input = document.getElementById('payCodeField').value.trim();
+  if (input === payVerifyCode) {
+    localStorage.setItem('tips_unlocked', '1');
+    closePayModal();
+    if (state.currentReport) {
+      renderReport(state.currentReport);
+    }
+    showToast('🎉 解锁成功！祝宝贝健康成长~');
+    fetch('/api/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ event: 'pay', amount: 1 })
+    }).catch(() => {});
+  } else {
+    document.getElementById('payCodeError').style.display = 'block';
+    document.getElementById('payCodeField').value = '';
+    document.getElementById('payCodeField').focus();
   }
-  showToast('🎉 解锁成功！祝宝贝健康成长~');
-  // Report payment to backend
-  fetch('/api/track', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ event: 'pay', amount: 1 })
-  }).catch(() => {});
 }
 
 function drawRadarChart(report) {
@@ -1931,10 +1959,16 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="pay-qr-wrap" id="payQR">
       <img src="/qr/alipay.jpg" alt="支付宝收款码">
     </div>
-    <div class="pay-hint">请使用对应 App 扫码支付 1 元，完成后点击下方按钮</div>
+    <div class="pay-code-label">支付验证码</div>
+    <div class="pay-code" id="payCode">0000</div>
+    <div class="pay-hint">请使用对应 App 扫码支付 1 元，支付后点击下方按钮输入验证码</div>
+    <div class="pay-code-input" id="payCodeInput">
+      <input type="text" id="payCodeField" maxlength="4" placeholder="请输入验证码" inputmode="numeric" pattern="[0-9]*">
+      <div class="pay-code-error" id="payCodeError">❌ 验证码不正确，请重新输入</div>
+    </div>
     <div class="modal-actions">
       <button class="btn btn-outline" onclick="closePayModal()">取消</button>
-      <button class="btn pay-done-btn" onclick="confirmPay()">✅ 我已支付 1 元</button>
+      <button class="btn pay-done-btn" id="payConfirmBtn" onclick="confirmPay()">✅ 我已支付 1 元</button>
     </div>
   </div>
 </div>
