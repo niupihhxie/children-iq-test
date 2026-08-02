@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+dist/
+__pycache__/
+*.pyc
+.env
+miniprogram_npm/
+_h5_test/
+_docx_extract.txt
+generate_questions.py

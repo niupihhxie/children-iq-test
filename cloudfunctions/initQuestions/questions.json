@@ -1,0 +1,6988 @@
+{
+  "version": "1.0",
+  "total": 225,
+  "dimensions": [
+    "logic",
+    "language",
+    "spatial",
+    "memory",
+    "creativity"
+  ],
+  "questions": [
+    {
+      "questionId": "Q001",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个动物最大？",
+        "options": [
+          {
+            "text": "蝴蝶",
+            "score": 0
+          },
+          {
+            "text": "大象",
+            "score": 10
+          },
+          {
+            "text": "瓢虫",
+            "score": 0
+          },
+          {
+            "text": "蚂蚁",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q002",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "1后面是几？",
+        "options": [
+          {
+            "text": "9",
+            "score": 0
+          },
+          {
+            "text": "0",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 10
+          },
+          {
+            "text": "5",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q003",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个不是水果？",
+        "options": [
+          {
+            "text": "香蕉",
+            "score": 0
+          },
+          {
+            "text": "葡萄",
+            "score": 0
+          },
+          {
+            "text": "石头",
+            "score": 10
+          },
+          {
+            "text": "苹果",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q004",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "太阳在什么时候出来？",
+        "options": [
+          {
+            "text": "晚上",
+            "score": 0
+          },
+          {
+            "text": "半夜",
+            "score": 0
+          },
+          {
+            "text": "白天",
+            "score": 10
+          },
+          {
+            "text": "永远不",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q005",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个最重？",
+        "options": [
+          {
+            "text": "棉花",
+            "score": 0
+          },
+          {
+            "text": "铁球",
+            "score": 10
+          },
+          {
+            "text": "气球",
+            "score": 0
+          },
+          {
+            "text": "羽毛",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q006",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "小明比小红高，小红比小华高，谁最矮？",
+        "options": [
+          {
+            "text": "小红",
+            "score": 0
+          },
+          {
+            "text": "一样高",
+            "score": 0
+          },
+          {
+            "text": "小华",
+            "score": 10
+          },
+          {
+            "text": "小明",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q007",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果今天是星期一，明天是星期几？",
+        "options": [
+          {
+            "text": "星期五",
+            "score": 0
+          },
+          {
+            "text": "星期二",
+            "score": 10
+          },
+          {
+            "text": "星期日",
+            "score": 0
+          },
+          {
+            "text": "星期六",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q008",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "3个苹果吃了1个，还剩几个？",
+        "options": [
+          {
+            "text": "2个",
+            "score": 10
+          },
+          {
+            "text": "4个",
+            "score": 0
+          },
+          {
+            "text": "1个",
+            "score": 0
+          },
+          {
+            "text": "3个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q009",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个和其他不同类？",
+        "options": [
+          {
+            "text": "汽车",
+            "score": 0
+          },
+          {
+            "text": "自行车",
+            "score": 0
+          },
+          {
+            "text": "公交车",
+            "score": 0
+          },
+          {
+            "text": "电视机",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q010",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "红绿灯中红灯表示什么？",
+        "options": [
+          {
+            "text": "转弯",
+            "score": 0
+          },
+          {
+            "text": "加速",
+            "score": 0
+          },
+          {
+            "text": "通行",
+            "score": 0
+          },
+          {
+            "text": "停止",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q011",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "5只小鸟飞走了2只，又飞来3只，现在有几只？",
+        "options": [
+          {
+            "text": "6只",
+            "score": 10
+          },
+          {
+            "text": "5只",
+            "score": 0
+          },
+          {
+            "text": "7只",
+            "score": 0
+          },
+          {
+            "text": "4只",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q012",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "按规律填数：2,4,6,?,10",
+        "options": [
+          {
+            "text": "11",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 10
+          },
+          {
+            "text": "7",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q013",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "小红排第3，小明排第7，两人中间有几人？",
+        "options": [
+          {
+            "text": "6人",
+            "score": 0
+          },
+          {
+            "text": "4人",
+            "score": 0
+          },
+          {
+            "text": "3人",
+            "score": 10
+          },
+          {
+            "text": "5人",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q014",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正方形有几条边？",
+        "options": [
+          {
+            "text": "5条",
+            "score": 0
+          },
+          {
+            "text": "6条",
+            "score": 0
+          },
+          {
+            "text": "4条",
+            "score": 10
+          },
+          {
+            "text": "3条",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q015",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个不是同一类？",
+        "options": [
+          {
+            "text": "春天",
+            "score": 0
+          },
+          {
+            "text": "夏天",
+            "score": 0
+          },
+          {
+            "text": "今天",
+            "score": 10
+          },
+          {
+            "text": "秋天",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q016",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一支铅笔5角钱，3支多少钱？",
+        "options": [
+          {
+            "text": "2元5角",
+            "score": 0
+          },
+          {
+            "text": "1元",
+            "score": 0
+          },
+          {
+            "text": "2元",
+            "score": 0
+          },
+          {
+            "text": "1元5角",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q017",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个数是奇数？",
+        "options": [
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          },
+          {
+            "text": "7",
+            "score": 10
+          },
+          {
+            "text": "4",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q018",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "12的一半是多少？",
+        "options": [
+          {
+            "text": "5",
+            "score": 0
+          },
+          {
+            "text": "7",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q019",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果A>B, B>C, 那么A和C的关系是？",
+        "options": [
+          {
+            "text": "不确定",
+            "score": 0
+          },
+          {
+            "text": "A>C",
+            "score": 10
+          },
+          {
+            "text": "A=C",
+            "score": 0
+          },
+          {
+            "text": "A<C",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q020",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一年有几个季节？",
+        "options": [
+          {
+            "text": "2个",
+            "score": 0
+          },
+          {
+            "text": "3个",
+            "score": 0
+          },
+          {
+            "text": "4个",
+            "score": 10
+          },
+          {
+            "text": "5个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q021",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "小明有10颗糖，给了小红一半，又吃了2颗，还剩几颗？",
+        "options": [
+          {
+            "text": "2颗",
+            "score": 0
+          },
+          {
+            "text": "4颗",
+            "score": 0
+          },
+          {
+            "text": "5颗",
+            "score": 0
+          },
+          {
+            "text": "3颗",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q022",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "按规律填数：1,4,9,16,?",
+        "options": [
+          {
+            "text": "20",
+            "score": 0
+          },
+          {
+            "text": "36",
+            "score": 0
+          },
+          {
+            "text": "30",
+            "score": 0
+          },
+          {
+            "text": "25",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q023",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "时钟上3点整，时针和分针的夹角是？",
+        "options": [
+          {
+            "text": "90度",
+            "score": 10
+          },
+          {
+            "text": "180度",
+            "score": 0
+          },
+          {
+            "text": "120度",
+            "score": 0
+          },
+          {
+            "text": "60度",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q024",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "5个人排队，小明前面有3人，他后面有几人？",
+        "options": [
+          {
+            "text": "2人",
+            "score": 0
+          },
+          {
+            "text": "3人",
+            "score": 0
+          },
+          {
+            "text": "0人",
+            "score": 0
+          },
+          {
+            "text": "1人",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q025",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个数加上5等于12，这个数是？",
+        "options": [
+          {
+            "text": "7",
+            "score": 10
+          },
+          {
+            "text": "5",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q026",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个袋子里有3红球2白球，摸出红球概率是？",
+        "options": [
+          {
+            "text": "2/5",
+            "score": 0
+          },
+          {
+            "text": "3/2",
+            "score": 0
+          },
+          {
+            "text": "1/5",
+            "score": 0
+          },
+          {
+            "text": "3/5",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q027",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "等差数列：3,7,11,?,19",
+        "options": [
+          {
+            "text": "16",
+            "score": 0
+          },
+          {
+            "text": "15",
+            "score": 10
+          },
+          {
+            "text": "14",
+            "score": 0
+          },
+          {
+            "text": "13",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q028",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "长方形长8宽5，周长是？",
+        "options": [
+          {
+            "text": "18",
+            "score": 0
+          },
+          {
+            "text": "40",
+            "score": 0
+          },
+          {
+            "text": "13",
+            "score": 0
+          },
+          {
+            "text": "26",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q029",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果3x+2=17，x=？",
+        "options": [
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "3",
+            "score": 0
+          },
+          {
+            "text": "5",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q030",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个三位数，百位是5，个位是3，十位是0，这个数是？",
+        "options": [
+          {
+            "text": "530",
+            "score": 0
+          },
+          {
+            "text": "503",
+            "score": 10
+          },
+          {
+            "text": "305",
+            "score": 0
+          },
+          {
+            "text": "350",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q031",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "25×4=？",
+        "options": [
+          {
+            "text": "100",
+            "score": 10
+          },
+          {
+            "text": "80",
+            "score": 0
+          },
+          {
+            "text": "110",
+            "score": 0
+          },
+          {
+            "text": "90",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q032",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个数的25%是15，这个数是？",
+        "options": [
+          {
+            "text": "45",
+            "score": 0
+          },
+          {
+            "text": "75",
+            "score": 0
+          },
+          {
+            "text": "60",
+            "score": 10
+          },
+          {
+            "text": "50",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q033",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正方形面积是36，边长是？",
+        "options": [
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 10
+          },
+          {
+            "text": "8",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q034",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果今天是星期三，10天后是星期几？",
+        "options": [
+          {
+            "text": "星期六",
+            "score": 10
+          },
+          {
+            "text": "星期一",
+            "score": 0
+          },
+          {
+            "text": "星期五",
+            "score": 0
+          },
+          {
+            "text": "星期日",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q035",
+      "dimension": "logic",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是质数？",
+        "options": [
+          {
+            "text": "15",
+            "score": 0
+          },
+          {
+            "text": "17",
+            "score": 10
+          },
+          {
+            "text": "9",
+            "score": 0
+          },
+          {
+            "text": "21",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q036",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一列数：1,1,2,3,5,8,?, 第7项是？",
+        "options": [
+          {
+            "text": "13",
+            "score": 10
+          },
+          {
+            "text": "15",
+            "score": 0
+          },
+          {
+            "text": "17",
+            "score": 0
+          },
+          {
+            "text": "11",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q037",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个圆的半径是3，面积约为？(π≈3.14)",
+        "options": [
+          {
+            "text": "28.26",
+            "score": 10
+          },
+          {
+            "text": "18.84",
+            "score": 0
+          },
+          {
+            "text": "37.68",
+            "score": 0
+          },
+          {
+            "text": "9.42",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q038",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "3台机器3分钟生产3个零件，9台机器3分钟生产几个？",
+        "options": [
+          {
+            "text": "6个",
+            "score": 0
+          },
+          {
+            "text": "12个",
+            "score": 0
+          },
+          {
+            "text": "9个",
+            "score": 10
+          },
+          {
+            "text": "27个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q039",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "鸡兔同笼，共10个头26条腿，鸡有几只？",
+        "options": [
+          {
+            "text": "6只",
+            "score": 0
+          },
+          {
+            "text": "5只",
+            "score": 0
+          },
+          {
+            "text": "8只",
+            "score": 0
+          },
+          {
+            "text": "7只",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q040",
+      "dimension": "logic",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果a÷b=3余2，b最小是？",
+        "options": [
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "3",
+            "score": 10
+          },
+          {
+            "text": "1",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q041",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一道台阶有10级，每次走1或2级，有几种走法？",
+        "options": [
+          {
+            "text": "45种",
+            "score": 0
+          },
+          {
+            "text": "89种",
+            "score": 10
+          },
+          {
+            "text": "55种",
+            "score": 0
+          },
+          {
+            "text": "34种",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q042",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "从5人中选3人排队，有几种排法？",
+        "options": [
+          {
+            "text": "60种",
+            "score": 10
+          },
+          {
+            "text": "20种",
+            "score": 0
+          },
+          {
+            "text": "10种",
+            "score": 0
+          },
+          {
+            "text": "120种",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q043",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "2的10次方是？",
+        "options": [
+          {
+            "text": "256",
+            "score": 0
+          },
+          {
+            "text": "1024",
+            "score": 10
+          },
+          {
+            "text": "2048",
+            "score": 0
+          },
+          {
+            "text": "512",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q044",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "等比数列1,2,4,8,...第10项是？",
+        "options": [
+          {
+            "text": "2048",
+            "score": 0
+          },
+          {
+            "text": "256",
+            "score": 0
+          },
+          {
+            "text": "1024",
+            "score": 0
+          },
+          {
+            "text": "512",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q045",
+      "dimension": "logic",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "三角形内角和是？",
+        "options": [
+          {
+            "text": "180度",
+            "score": 10
+          },
+          {
+            "text": "90度",
+            "score": 0
+          },
+          {
+            "text": "360度",
+            "score": 0
+          },
+          {
+            "text": "270度",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q046",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个词表示“大”的反义词？",
+        "options": [
+          {
+            "text": "长",
+            "score": 0
+          },
+          {
+            "text": "高",
+            "score": 0
+          },
+          {
+            "text": "胖",
+            "score": 0
+          },
+          {
+            "text": "小",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q047",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“汪汪”是什么动物的声音？",
+        "options": [
+          {
+            "text": "鸭",
+            "score": 0
+          },
+          {
+            "text": "狗",
+            "score": 10
+          },
+          {
+            "text": "鸟",
+            "score": 0
+          },
+          {
+            "text": "猫",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q048",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个是蔬菜？",
+        "options": [
+          {
+            "text": "香蕉",
+            "score": 0
+          },
+          {
+            "text": "白菜",
+            "score": 10
+          },
+          {
+            "text": "苹果",
+            "score": 0
+          },
+          {
+            "text": "西瓜",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q049",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“高兴”是什么意思？",
+        "options": [
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "伤心",
+            "score": 0
+          },
+          {
+            "text": "开心",
+            "score": 10
+          },
+          {
+            "text": "生气",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q050",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个不是反义词对？",
+        "options": [
+          {
+            "text": "高低",
+            "score": 0
+          },
+          {
+            "text": "红绿",
+            "score": 10
+          },
+          {
+            "text": "胖瘦",
+            "score": 0
+          },
+          {
+            "text": "大小",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q051",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“一石二鸟”是什么意思？",
+        "options": [
+          {
+            "text": "鸟吃石头",
+            "score": 0
+          },
+          {
+            "text": "一举两得",
+            "score": 10
+          },
+          {
+            "text": "两只鸟打架",
+            "score": 0
+          },
+          {
+            "text": "用石头打鸟",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q052",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "选出正确量词：一（）书",
+        "options": [
+          {
+            "text": "本",
+            "score": 10
+          },
+          {
+            "text": "条",
+            "score": 0
+          },
+          {
+            "text": "只",
+            "score": 0
+          },
+          {
+            "text": "个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q053",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“妈妈在厨房做饭”中，妈妈在做什么？",
+        "options": [
+          {
+            "text": "打扫",
+            "score": 0
+          },
+          {
+            "text": "看电视",
+            "score": 0
+          },
+          {
+            "text": "休息",
+            "score": 0
+          },
+          {
+            "text": "做饭",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q054",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个词和其他不同？",
+        "options": [
+          {
+            "text": "跑步",
+            "score": 0
+          },
+          {
+            "text": "睡觉",
+            "score": 10
+          },
+          {
+            "text": "走路",
+            "score": 0
+          },
+          {
+            "text": "跳跃",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q055",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“手”的同义词是？",
+        "options": [
+          {
+            "text": "腿",
+            "score": 0
+          },
+          {
+            "text": "脚",
+            "score": 0
+          },
+          {
+            "text": "头",
+            "score": 0
+          },
+          {
+            "text": "手掌",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q056",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“光阴似箭”比喻什么？",
+        "options": [
+          {
+            "text": "箭很快",
+            "score": 0
+          },
+          {
+            "text": "箭很多",
+            "score": 0
+          },
+          {
+            "text": "时间飞逝",
+            "score": 10
+          },
+          {
+            "text": "射箭比赛",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q057",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是成语？",
+        "options": [
+          {
+            "text": "大红苹果",
+            "score": 0
+          },
+          {
+            "text": "画蛇添足",
+            "score": 10
+          },
+          {
+            "text": "天上飞鸟",
+            "score": 0
+          },
+          {
+            "text": "地上走路",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q058",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“他高兴得跳了起来”说明他心情怎样？",
+        "options": [
+          {
+            "text": "非常开心",
+            "score": 10
+          },
+          {
+            "text": "生气",
+            "score": 0
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "难过",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q059",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个句子是比喻句？",
+        "options": [
+          {
+            "text": "他叫小明",
+            "score": 0
+          },
+          {
+            "text": "他在跑步",
+            "score": 0
+          },
+          {
+            "text": "他像猴子一样灵活",
+            "score": 10
+          },
+          {
+            "text": "他是学生",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q060",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“秋高气爽”形容哪个季节？",
+        "options": [
+          {
+            "text": "冬天",
+            "score": 0
+          },
+          {
+            "text": "春天",
+            "score": 0
+          },
+          {
+            "text": "秋天",
+            "score": 10
+          },
+          {
+            "text": "夏天",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q061",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“三人行必有我师”出自哪里？",
+        "options": [
+          {
+            "text": "论语",
+            "score": 10
+          },
+          {
+            "text": "西游记",
+            "score": 0
+          },
+          {
+            "text": "红楼梦",
+            "score": 0
+          },
+          {
+            "text": "李白诗",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q062",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪组词是近义词？",
+        "options": [
+          {
+            "text": "多少",
+            "score": 0
+          },
+          {
+            "text": "高低",
+            "score": 0
+          },
+          {
+            "text": "大小",
+            "score": 0
+          },
+          {
+            "text": "美丽/漂亮",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q063",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“亡羊补牢”告诉我们什么道理？",
+        "options": [
+          {
+            "text": "出错后及时补救",
+            "score": 10
+          },
+          {
+            "text": "羊跑了",
+            "score": 0
+          },
+          {
+            "text": "羊很重要",
+            "score": 0
+          },
+          {
+            "text": "牢破了",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q064",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个标点表示疑问？",
+        "options": [
+          {
+            "text": "。",
+            "score": 0
+          },
+          {
+            "text": "！",
+            "score": 0
+          },
+          {
+            "text": "，",
+            "score": 0
+          },
+          {
+            "text": "？",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q065",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“美丽的花园里开满了鲜花”的主语是？",
+        "options": [
+          {
+            "text": "鲜花",
+            "score": 0
+          },
+          {
+            "text": "美丽",
+            "score": 0
+          },
+          {
+            "text": "开满",
+            "score": 0
+          },
+          {
+            "text": "花园",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q066",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“守株待兔”比喻什么样的人？",
+        "options": [
+          {
+            "text": "养兔子的人",
+            "score": 0
+          },
+          {
+            "text": "不劳而获的人",
+            "score": 10
+          },
+          {
+            "text": "勤劳的人",
+            "score": 0
+          },
+          {
+            "text": "种树的人",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q067",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是拟人句？",
+        "options": [
+          {
+            "text": "花儿对我点头微笑",
+            "score": 10
+          },
+          {
+            "text": "花很美",
+            "score": 0
+          },
+          {
+            "text": "花红了",
+            "score": 0
+          },
+          {
+            "text": "花开了",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q068",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“不但...而且...”是什么关系？",
+        "options": [
+          {
+            "text": "并列",
+            "score": 0
+          },
+          {
+            "text": "递进",
+            "score": 10
+          },
+          {
+            "text": "因果",
+            "score": 0
+          },
+          {
+            "text": "转折",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q069",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "将“小红跑得快”改为比喻句：",
+        "options": [
+          {
+            "text": "小红跑得很快",
+            "score": 0
+          },
+          {
+            "text": "小红跑了一会",
+            "score": 0
+          },
+          {
+            "text": "小红跑得像兔子一样快",
+            "score": 10
+          },
+          {
+            "text": "小红在跑步",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q070",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“床前明月光”的作者是？",
+        "options": [
+          {
+            "text": "李白",
+            "score": 10
+          },
+          {
+            "text": "杜甫",
+            "score": 0
+          },
+          {
+            "text": "白居易",
+            "score": 0
+          },
+          {
+            "text": "王维",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q071",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“塞翁失马”下一句是？",
+        "options": [
+          {
+            "text": "再也找不到",
+            "score": 0
+          },
+          {
+            "text": "焉知非福",
+            "score": 10
+          },
+          {
+            "text": "非常伤心",
+            "score": 0
+          },
+          {
+            "text": "后悔莫及",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q072",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个不是修辞手法？",
+        "options": [
+          {
+            "text": "拟人",
+            "score": 0
+          },
+          {
+            "text": "动词",
+            "score": 10
+          },
+          {
+            "text": "比喻",
+            "score": 0
+          },
+          {
+            "text": "排比",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q073",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "这本书很有趣，____很厚。填入：",
+        "options": [
+          {
+            "text": "因为",
+            "score": 0
+          },
+          {
+            "text": "所以",
+            "score": 0
+          },
+          {
+            "text": "而且",
+            "score": 0
+          },
+          {
+            "text": "但是",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q074",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“狐假虎威”中狐狸借助谁的威风？",
+        "options": [
+          {
+            "text": "狼",
+            "score": 0
+          },
+          {
+            "text": "狮子",
+            "score": 0
+          },
+          {
+            "text": "熊",
+            "score": 0
+          },
+          {
+            "text": "老虎",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q075",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "古诗“春眠不觉晓”的“晓”意思是？",
+        "options": [
+          {
+            "text": "通晓",
+            "score": 0
+          },
+          {
+            "text": "知道",
+            "score": 0
+          },
+          {
+            "text": "天亮",
+            "score": 0
+          },
+          {
+            "text": "拂晓/早晨",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q076",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“落红不是无情物”中“落红”指？",
+        "options": [
+          {
+            "text": "夕阳",
+            "score": 0
+          },
+          {
+            "text": "枫叶",
+            "score": 0
+          },
+          {
+            "text": "落花",
+            "score": 10
+          },
+          {
+            "text": "红色",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q077",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪句是被动句？",
+        "options": [
+          {
+            "text": "球被他打了",
+            "score": 10
+          },
+          {
+            "text": "球在打",
+            "score": 0
+          },
+          {
+            "text": "他打球了",
+            "score": 0
+          },
+          {
+            "text": "他打了球",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q078",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“为中华之崛起而读书”是谁说的？",
+        "options": [
+          {
+            "text": "周恩来",
+            "score": 10
+          },
+          {
+            "text": "邓小平",
+            "score": 0
+          },
+          {
+            "text": "鲁迅",
+            "score": 0
+          },
+          {
+            "text": "毛泽东",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q079",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“四面楚歌”与哪个历史人物有关？",
+        "options": [
+          {
+            "text": "刘邦",
+            "score": 0
+          },
+          {
+            "text": "韩信",
+            "score": 0
+          },
+          {
+            "text": "项羽",
+            "score": 10
+          },
+          {
+            "text": "张良",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q080",
+      "dimension": "language",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是转折连词？",
+        "options": [
+          {
+            "text": "而且",
+            "score": 0
+          },
+          {
+            "text": "因为",
+            "score": 0
+          },
+          {
+            "text": "如果",
+            "score": 0
+          },
+          {
+            "text": "虽然",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q081",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“醉翁之意不在酒”的作者是？",
+        "options": [
+          {
+            "text": "王安石",
+            "score": 0
+          },
+          {
+            "text": "苏轼",
+            "score": 0
+          },
+          {
+            "text": "范仲淹",
+            "score": 0
+          },
+          {
+            "text": "欧阳修",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q082",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“千呼万唤始出来”下一句是？",
+        "options": [
+          {
+            "text": "犹抱琵琶半遮面",
+            "score": 10
+          },
+          {
+            "text": "此时无声胜有声",
+            "score": 0
+          },
+          {
+            "text": "大珠小珠落玉盘",
+            "score": 0
+          },
+          {
+            "text": "同是天涯沦落人",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q083",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是议论文的三要素？",
+        "options": [
+          {
+            "text": "论点论据论证",
+            "score": 10
+          },
+          {
+            "text": "时间地点人物",
+            "score": 0
+          },
+          {
+            "text": "开头中间结尾",
+            "score": 0
+          },
+          {
+            "text": "人物情节环境",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q084",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“滥筬充数”告诉我们什么？",
+        "options": [
+          {
+            "text": "充数不好",
+            "score": 0
+          },
+          {
+            "text": "要努力",
+            "score": 0
+          },
+          {
+            "text": "要学乐器",
+            "score": 0
+          },
+          {
+            "text": "弄虚作假不能长久",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q085",
+      "dimension": "language",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个不是说明方法？",
+        "options": [
+          {
+            "text": "写日记",
+            "score": 10
+          },
+          {
+            "text": "打比方",
+            "score": 0
+          },
+          {
+            "text": "举例子",
+            "score": 0
+          },
+          {
+            "text": "列数字",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q086",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“出师未捷身先死”描写的是谁？",
+        "options": [
+          {
+            "text": "诸葛亮",
+            "score": 10
+          },
+          {
+            "text": "张飞",
+            "score": 0
+          },
+          {
+            "text": "关羽",
+            "score": 0
+          },
+          {
+            "text": "刘备",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q087",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“人生古今谁无死”下一句？",
+        "options": [
+          {
+            "text": "不破楼兰终不还",
+            "score": 0
+          },
+          {
+            "text": "留取丹心照汗青",
+            "score": 10
+          },
+          {
+            "text": "铁马冰河入梦来",
+            "score": 0
+          },
+          {
+            "text": "万里长征人未还",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q088",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪部不是四大名著？",
+        "options": [
+          {
+            "text": "西游记",
+            "score": 0
+          },
+          {
+            "text": "三国演义",
+            "score": 0
+          },
+          {
+            "text": "聊斋志异",
+            "score": 10
+          },
+          {
+            "text": "红楼梦",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q089",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "“先天下之忧而忧”出自？",
+        "options": [
+          {
+            "text": "出师表",
+            "score": 0
+          },
+          {
+            "text": "赤壁赋",
+            "score": 0
+          },
+          {
+            "text": "醉翁亭记",
+            "score": 0
+          },
+          {
+            "text": "岳阳楼记",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q090",
+      "dimension": "language",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个不是明代小说四大奇书？",
+        "options": [
+          {
+            "text": "西游记",
+            "score": 0
+          },
+          {
+            "text": "三国演义",
+            "score": 0
+          },
+          {
+            "text": "封神演义",
+            "score": 10
+          },
+          {
+            "text": "水浒传",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q091",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个是圆形？",
+        "options": [
+          {
+            "text": "☆",
+            "score": 0
+          },
+          {
+            "text": "△",
+            "score": 0
+          },
+          {
+            "text": "○",
+            "score": 10
+          },
+          {
+            "text": "□",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q092",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "积木携3层高，每层2块，共几块？",
+        "options": [
+          {
+            "text": "7块",
+            "score": 0
+          },
+          {
+            "text": "6块",
+            "score": 10
+          },
+          {
+            "text": "5块",
+            "score": 0
+          },
+          {
+            "text": "4块",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q093",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "太阳是什么形状？",
+        "options": [
+          {
+            "text": "星形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "方形",
+            "score": 0
+          },
+          {
+            "text": "圆形",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q094",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个可以滚动？",
+        "options": [
+          {
+            "text": "方块",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "长方形",
+            "score": 0
+          },
+          {
+            "text": "球",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q095",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "上下楼梯时，上楼的相反是？",
+        "options": [
+          {
+            "text": "前进",
+            "score": 0
+          },
+          {
+            "text": "转弯",
+            "score": 0
+          },
+          {
+            "text": "下楼",
+            "score": 10
+          },
+          {
+            "text": "后退",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q096",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一张纸对折一次后有几层？",
+        "options": [
+          {
+            "text": "3层",
+            "score": 0
+          },
+          {
+            "text": "1层",
+            "score": 0
+          },
+          {
+            "text": "2层",
+            "score": 10
+          },
+          {
+            "text": "4层",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q097",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "三角形有几个角？",
+        "options": [
+          {
+            "text": "4个",
+            "score": 0
+          },
+          {
+            "text": "5个",
+            "score": 0
+          },
+          {
+            "text": "3个",
+            "score": 10
+          },
+          {
+            "text": "2个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q098",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正方体有几个面？",
+        "options": [
+          {
+            "text": "5个",
+            "score": 0
+          },
+          {
+            "text": "8个",
+            "score": 0
+          },
+          {
+            "text": "6个",
+            "score": 10
+          },
+          {
+            "text": "4个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q099",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "左手的另一边是？",
+        "options": [
+          {
+            "text": "上面",
+            "score": 0
+          },
+          {
+            "text": "后面",
+            "score": 0
+          },
+          {
+            "text": "前面",
+            "score": 0
+          },
+          {
+            "text": "右手",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q100",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "哪个是立体图形？",
+        "options": [
+          {
+            "text": "球体",
+            "score": 10
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "正方形",
+            "score": 0
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q101",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正方体沿对角线切，截面是什么形？",
+        "options": [
+          {
+            "text": "圆形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "正方形",
+            "score": 0
+          },
+          {
+            "text": "六边形",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q102",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆柱体从上面看是什么形？",
+        "options": [
+          {
+            "text": "圆形",
+            "score": 10
+          },
+          {
+            "text": "长方形",
+            "score": 0
+          },
+          {
+            "text": "正方形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q103",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "4个小正方形能拼成什么？",
+        "options": [
+          {
+            "text": "大正方形",
+            "score": 10
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "梯形",
+            "score": 0
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q104",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "展开后的纸盒（立方体）有几个面？",
+        "options": [
+          {
+            "text": "6个",
+            "score": 10
+          },
+          {
+            "text": "4个",
+            "score": 0
+          },
+          {
+            "text": "8个",
+            "score": 0
+          },
+          {
+            "text": "5个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q105",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "钟表上12在哪个方向？",
+        "options": [
+          {
+            "text": "上面",
+            "score": 10
+          },
+          {
+            "text": "右边",
+            "score": 0
+          },
+          {
+            "text": "左边",
+            "score": 0
+          },
+          {
+            "text": "下面",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q106",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "长方形有4个直角，三角形最多有几个直角？",
+        "options": [
+          {
+            "text": "3个",
+            "score": 0
+          },
+          {
+            "text": "0个",
+            "score": 0
+          },
+          {
+            "text": "1个",
+            "score": 10
+          },
+          {
+            "text": "2个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q107",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正方形旋轩45度后看起来像什么？",
+        "options": [
+          {
+            "text": "长方形",
+            "score": 0
+          },
+          {
+            "text": "菱形",
+            "score": 10
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q108",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个图形对称轴最多？",
+        "options": [
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "正方形",
+            "score": 0
+          },
+          {
+            "text": "长方形",
+            "score": 0
+          },
+          {
+            "text": "圆",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q109",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正方体的展开图有几种形状？",
+        "options": [
+          {
+            "text": "无数种",
+            "score": 0
+          },
+          {
+            "text": "6种",
+            "score": 0
+          },
+          {
+            "text": "11种",
+            "score": 10
+          },
+          {
+            "text": "2种",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q110",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "从前面看圆柱，看到什么形？",
+        "options": [
+          {
+            "text": "长方形",
+            "score": 10
+          },
+          {
+            "text": "梯形",
+            "score": 0
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q111",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个等腰三角形顶角是80度，底角是？",
+        "options": [
+          {
+            "text": "80度",
+            "score": 0
+          },
+          {
+            "text": "50度",
+            "score": 10
+          },
+          {
+            "text": "40度",
+            "score": 0
+          },
+          {
+            "text": "60度",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q112",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆的周长和直径的比是？",
+        "options": [
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "2π",
+            "score": 0
+          },
+          {
+            "text": "π",
+            "score": 10
+          },
+          {
+            "text": "3",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q113",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个长10宽6的长方形，剪去最大正方形，剩余面积？",
+        "options": [
+          {
+            "text": "24",
+            "score": 10
+          },
+          {
+            "text": "16",
+            "score": 0
+          },
+          {
+            "text": "36",
+            "score": 0
+          },
+          {
+            "text": "60",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q114",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个图形不能密铺？",
+        "options": [
+          {
+            "text": "正方形",
+            "score": 0
+          },
+          {
+            "text": "正六边形",
+            "score": 0
+          },
+          {
+            "text": "正五边形",
+            "score": 10
+          },
+          {
+            "text": "正三角形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q115",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆柱侧面展开是什么形？",
+        "options": [
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "梯形",
+            "score": 0
+          },
+          {
+            "text": "长方形",
+            "score": 10
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q116",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正方体切去一个角，最多剩几个角？",
+        "options": [
+          {
+            "text": "8个",
+            "score": 0
+          },
+          {
+            "text": "9个",
+            "score": 0
+          },
+          {
+            "text": "7个",
+            "score": 0
+          },
+          {
+            "text": "10个",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q117",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "半径为r的圆，面积是周长的几倍？",
+        "options": [
+          {
+            "text": "πr",
+            "score": 0
+          },
+          {
+            "text": "r/2",
+            "score": 10
+          },
+          {
+            "text": "r",
+            "score": 0
+          },
+          {
+            "text": "2r",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q118",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正六边形每个内角是？",
+        "options": [
+          {
+            "text": "108度",
+            "score": 0
+          },
+          {
+            "text": "135度",
+            "score": 0
+          },
+          {
+            "text": "60度",
+            "score": 0
+          },
+          {
+            "text": "120度",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q119",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个梯形上下底之和为10，高为4，面积是？",
+        "options": [
+          {
+            "text": "50",
+            "score": 0
+          },
+          {
+            "text": "40",
+            "score": 0
+          },
+          {
+            "text": "30",
+            "score": 0
+          },
+          {
+            "text": "20",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q120",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "球体的表面积公式是？",
+        "options": [
+          {
+            "text": "4/3πr³",
+            "score": 0
+          },
+          {
+            "text": "4πr²",
+            "score": 10
+          },
+          {
+            "text": "πr²",
+            "score": 0
+          },
+          {
+            "text": "2πr²",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q121",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正方体展开图中，相对面的距离是？",
+        "options": [
+          {
+            "text": "隔2格",
+            "score": 0
+          },
+          {
+            "text": "相邻",
+            "score": 0
+          },
+          {
+            "text": "不确定",
+            "score": 0
+          },
+          {
+            "text": "隔1格",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q122",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个三角形的面积是12，底是6，高是？",
+        "options": [
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 10
+          },
+          {
+            "text": "3",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q123",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "下列哪个是轴对称图形？",
+        "options": [
+          {
+            "text": "等腰梯形",
+            "score": 10
+          },
+          {
+            "text": "平行四边形",
+            "score": 0
+          },
+          {
+            "text": "任意三角形",
+            "score": 0
+          },
+          {
+            "text": "不规则四边形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q124",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆环的面积公式是？",
+        "options": [
+          {
+            "text": "π(R+r)",
+            "score": 0
+          },
+          {
+            "text": "π(R-r)²",
+            "score": 0
+          },
+          {
+            "text": "πR+πr",
+            "score": 0
+          },
+          {
+            "text": "π(R²-r²)",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q125",
+      "dimension": "spatial",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个圆锥的体积是等底等高圆柱的？",
+        "options": [
+          {
+            "text": "2/3",
+            "score": 0
+          },
+          {
+            "text": "1/3",
+            "score": 10
+          },
+          {
+            "text": "1/2",
+            "score": 0
+          },
+          {
+            "text": "1/4",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q126",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正方形的对称轴有几条？",
+        "options": [
+          {
+            "text": "6条",
+            "score": 0
+          },
+          {
+            "text": "8条",
+            "score": 0
+          },
+          {
+            "text": "2条",
+            "score": 0
+          },
+          {
+            "text": "4条",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q127",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "已知向量a=(3,4)，|a|=？",
+        "options": [
+          {
+            "text": "12",
+            "score": 0
+          },
+          {
+            "text": "5",
+            "score": 10
+          },
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "7",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q128",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "空间中两直线既不平行也不相交称为？",
+        "options": [
+          {
+            "text": "共面",
+            "score": 0
+          },
+          {
+            "text": "垂直",
+            "score": 0
+          },
+          {
+            "text": "重合",
+            "score": 0
+          },
+          {
+            "text": "异面直线",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q129",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正四面体有几个面？",
+        "options": [
+          {
+            "text": "3面",
+            "score": 0
+          },
+          {
+            "text": "5面",
+            "score": 0
+          },
+          {
+            "text": "4面",
+            "score": 10
+          },
+          {
+            "text": "6面",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q130",
+      "dimension": "spatial",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个球切一刀，最大截面是？",
+        "options": [
+          {
+            "text": "点",
+            "score": 0
+          },
+          {
+            "text": "椭圆",
+            "score": 0
+          },
+          {
+            "text": "大圆",
+            "score": 10
+          },
+          {
+            "text": "小圆",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q131",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "正十二面体有多少个面？",
+        "options": [
+          {
+            "text": "10",
+            "score": 0
+          },
+          {
+            "text": "12",
+            "score": 10
+          },
+          {
+            "text": "14",
+            "score": 0
+          },
+          {
+            "text": "20",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q132",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "球面三角形的内角和？",
+        "options": [
+          {
+            "text": "小于180度",
+            "score": 0
+          },
+          {
+            "text": "大于180度",
+            "score": 10
+          },
+          {
+            "text": "等于360度",
+            "score": 0
+          },
+          {
+            "text": "180度",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q133",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个正多面体有20个面，它是？",
+        "options": [
+          {
+            "text": "正四面体",
+            "score": 0
+          },
+          {
+            "text": "正二十面体",
+            "score": 10
+          },
+          {
+            "text": "正八面体",
+            "score": 0
+          },
+          {
+            "text": "正六面体",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q134",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆柱斜切一刀，截面是？",
+        "options": [
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "椭圆",
+            "score": 10
+          },
+          {
+            "text": "矩形",
+            "score": 0
+          },
+          {
+            "text": "圆形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q135",
+      "dimension": "spatial",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "三维空间中，不在同一平面上的4点确定？",
+        "options": [
+          {
+            "text": "一条线",
+            "score": 0
+          },
+          {
+            "text": "一个平面",
+            "score": 0
+          },
+          {
+            "text": "一个球",
+            "score": 0
+          },
+          {
+            "text": "一个四面体",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q136",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：苹果、香蕉、橘子。下面哪个在刚才的列表中？",
+        "options": [
+          {
+            "text": "香蕉",
+            "score": 10
+          },
+          {
+            "text": "葡萄",
+            "score": 0
+          },
+          {
+            "text": "西瓜",
+            "score": 0
+          },
+          {
+            "text": "草莓",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q137",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住数字：3,7,1。刚才出现的数字有？",
+        "options": [
+          {
+            "text": "2,4,6",
+            "score": 0
+          },
+          {
+            "text": "3,7,1",
+            "score": 10
+          },
+          {
+            "text": "5,8,9",
+            "score": 0
+          },
+          {
+            "text": "1,3,5",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q138",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住颜色：红、黄、蓝。下列哪个不在其中？",
+        "options": [
+          {
+            "text": "蓝色",
+            "score": 0
+          },
+          {
+            "text": "黄色",
+            "score": 0
+          },
+          {
+            "text": "红色",
+            "score": 0
+          },
+          {
+            "text": "绿色",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q139",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：小猫在睡觉。小猫在做什么？",
+        "options": [
+          {
+            "text": "玩耍",
+            "score": 0
+          },
+          {
+            "text": "跑步",
+            "score": 0
+          },
+          {
+            "text": "睡觉",
+            "score": 10
+          },
+          {
+            "text": "吃饭",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q140",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住顺序：1→2→3。3后面应该跟？",
+        "options": [
+          {
+            "text": "1",
+            "score": 0
+          },
+          {
+            "text": "0",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q141",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：5,2,8,1。第2个数字是？",
+        "options": [
+          {
+            "text": "5",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 10
+          },
+          {
+            "text": "1",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q142",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住词语：太阳、月亮、星星、云。下列哪个不在其中？",
+        "options": [
+          {
+            "text": "星星",
+            "score": 0
+          },
+          {
+            "text": "月亮",
+            "score": 0
+          },
+          {
+            "text": "风",
+            "score": 10
+          },
+          {
+            "text": "太阳",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q143",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：红球→蓝球→绿球。绿球前面是？",
+        "options": [
+          {
+            "text": "红球",
+            "score": 0
+          },
+          {
+            "text": "蓝球",
+            "score": 10
+          },
+          {
+            "text": "紫球",
+            "score": 0
+          },
+          {
+            "text": "黄球",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q144",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住数字串：2-4-6-8。最后的数字是？",
+        "options": [
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q145",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：小明有小狗。谁有小狗？",
+        "options": [
+          {
+            "text": "小华",
+            "score": 0
+          },
+          {
+            "text": "小亮",
+            "score": 0
+          },
+          {
+            "text": "小红",
+            "score": 0
+          },
+          {
+            "text": "小明",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q146",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：3,1,4,1,5。数字11出现了几次？",
+        "options": [
+          {
+            "text": "2次",
+            "score": 10
+          },
+          {
+            "text": "1次",
+            "score": 0
+          },
+          {
+            "text": "3次",
+            "score": 0
+          },
+          {
+            "text": "4次",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q147",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：猫-狗-鸟-鱼-兔。第4个是？",
+        "options": [
+          {
+            "text": "鱼",
+            "score": 10
+          },
+          {
+            "text": "猫",
+            "score": 0
+          },
+          {
+            "text": "狗",
+            "score": 0
+          },
+          {
+            "text": "鸟",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q148",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住句子：小红在公园放风筝。小红在哪里？",
+        "options": [
+          {
+            "text": "商店",
+            "score": 0
+          },
+          {
+            "text": "家里",
+            "score": 0
+          },
+          {
+            "text": "学校",
+            "score": 0
+          },
+          {
+            "text": "公园",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q149",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：苹果3个、香蕉2个、橘子1个。香蕉有几个？",
+        "options": [
+          {
+            "text": "1个",
+            "score": 0
+          },
+          {
+            "text": "2个",
+            "score": 10
+          },
+          {
+            "text": "3个",
+            "score": 0
+          },
+          {
+            "text": "4个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q150",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：圆形红色、方形蓝色。什么形状是蓝色？",
+        "options": [
+          {
+            "text": "圆形",
+            "score": 0
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          },
+          {
+            "text": "方形",
+            "score": 10
+          },
+          {
+            "text": "星形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q151",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：7,3,9,1,5,2。第3个数字是？",
+        "options": [
+          {
+            "text": "9",
+            "score": 10
+          },
+          {
+            "text": "5",
+            "score": 0
+          },
+          {
+            "text": "3",
+            "score": 0
+          },
+          {
+            "text": "7",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q152",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住词语：森林、河流、山脉、草原、沙漠。第5个是？",
+        "options": [
+          {
+            "text": "草原",
+            "score": 0
+          },
+          {
+            "text": "森林",
+            "score": 0
+          },
+          {
+            "text": "沙漠",
+            "score": 10
+          },
+          {
+            "text": "河流",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q153",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：A-C-E-G-B-D-F。B排在第几个？",
+        "options": [
+          {
+            "text": "第3个",
+            "score": 0
+          },
+          {
+            "text": "第5个",
+            "score": 10
+          },
+          {
+            "text": "第7个",
+            "score": 0
+          },
+          {
+            "text": "第6个",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q154",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：春天温暖、夏天炎热、秋天凉爽。秋天怎样？",
+        "options": [
+          {
+            "text": "凉爽",
+            "score": 10
+          },
+          {
+            "text": "炎热",
+            "score": 0
+          },
+          {
+            "text": "寒冷",
+            "score": 0
+          },
+          {
+            "text": "温暖",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q155",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住数字：8-3-1-9-5。倒过来第2个是？",
+        "options": [
+          {
+            "text": "1",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 10
+          },
+          {
+            "text": "3",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q156",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：4,9,2,7,5,1,8,3。第5个数字是？",
+        "options": [
+          {
+            "text": "7",
+            "score": 0
+          },
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "1",
+            "score": 0
+          },
+          {
+            "text": "5",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q157",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住词语：铅笔、橡皮、尺子、本子、剪刀、胶水。哪个排第3？",
+        "options": [
+          {
+            "text": "橡皮",
+            "score": 0
+          },
+          {
+            "text": "铅笔",
+            "score": 0
+          },
+          {
+            "text": "尺子",
+            "score": 10
+          },
+          {
+            "text": "本子",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q158",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：周一数学、周二语文、周三英语。周二上什么课？",
+        "options": [
+          {
+            "text": "英语",
+            "score": 0
+          },
+          {
+            "text": "数学",
+            "score": 0
+          },
+          {
+            "text": "语文",
+            "score": 10
+          },
+          {
+            "text": "体育",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q159",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住序列：红黄蓝绿红黄蓝？下一个是？",
+        "options": [
+          {
+            "text": "红",
+            "score": 0
+          },
+          {
+            "text": "蓝",
+            "score": 0
+          },
+          {
+            "text": "黄",
+            "score": 0
+          },
+          {
+            "text": "绿",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q160",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：3×4=12, 5×6=30。5×6等于？",
+        "options": [
+          {
+            "text": "15",
+            "score": 0
+          },
+          {
+            "text": "30",
+            "score": 10
+          },
+          {
+            "text": "12",
+            "score": 0
+          },
+          {
+            "text": "20",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q161",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：9,4,7,2,8,1,5,3,6。数宗7后面是？",
+        "options": [
+          {
+            "text": "2",
+            "score": 10
+          },
+          {
+            "text": "8",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q162",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住10个词：书桌/台灯/书架/椅子/地毯/窗帘/花瓶/画框/闹钟/镜子。花瓶排第几？",
+        "options": [
+          {
+            "text": "第5个",
+            "score": 0
+          },
+          {
+            "text": "第9个",
+            "score": 0
+          },
+          {
+            "text": "第8个",
+            "score": 0
+          },
+          {
+            "text": "第7个",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q163",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：2-4-8-16-32-64。第4个数是？",
+        "options": [
+          {
+            "text": "16",
+            "score": 10
+          },
+          {
+            "text": "64",
+            "score": 0
+          },
+          {
+            "text": "32",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q164",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：红3、蓝7、绿5、黄9。绿色对应数字？",
+        "options": [
+          {
+            "text": "7",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 0
+          },
+          {
+            "text": "5",
+            "score": 10
+          },
+          {
+            "text": "3",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q165",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住倒序：8,6,4,2,9,7,5,3,1。第5个是？",
+        "options": [
+          {
+            "text": "2",
+            "score": 0
+          },
+          {
+            "text": "9",
+            "score": 10
+          },
+          {
+            "text": "7",
+            "score": 0
+          },
+          {
+            "text": "4",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q166",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：7,2,9,4,1,8,5,3,6,0。第7个是？",
+        "options": [
+          {
+            "text": "5",
+            "score": 10
+          },
+          {
+            "text": "3",
+            "score": 0
+          },
+          {
+            "text": "8",
+            "score": 0
+          },
+          {
+            "text": "6",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q167",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住12位序列：A-B-C-D-E-F-G-H-I-J-K-L。第9个是？",
+        "options": [
+          {
+            "text": "I",
+            "score": 10
+          },
+          {
+            "text": "H",
+            "score": 0
+          },
+          {
+            "text": "G",
+            "score": 0
+          },
+          {
+            "text": "J",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q168",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：3.14, 2.72, 1.41, 1.73。第3个数字是？",
+        "options": [
+          {
+            "text": "1.41",
+            "score": 10
+          },
+          {
+            "text": "3.14",
+            "score": 0
+          },
+          {
+            "text": "2.72",
+            "score": 0
+          },
+          {
+            "text": "1.73",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q169",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：子-丑-寅-卯-辰-巳-午-未。第6个是？",
+        "options": [
+          {
+            "text": "辰",
+            "score": 0
+          },
+          {
+            "text": "巳",
+            "score": 10
+          },
+          {
+            "text": "未",
+            "score": 0
+          },
+          {
+            "text": "午",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q170",
+      "dimension": "memory",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：1949, 1978, 1997, 2008。1997后面是？",
+        "options": [
+          {
+            "text": "1949",
+            "score": 0
+          },
+          {
+            "text": "2008",
+            "score": 10
+          },
+          {
+            "text": "1997",
+            "score": 0
+          },
+          {
+            "text": "1978",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q171",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住20位序列，第15个字母是？序列：Q-W-E-R-T-Y-U-I-O-P-A-S-D-F-G-H-J-K-L-Z",
+        "options": [
+          {
+            "text": "J",
+            "score": 0
+          },
+          {
+            "text": "G",
+            "score": 10
+          },
+          {
+            "text": "H",
+            "score": 0
+          },
+          {
+            "text": "F",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q172",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：钠-镁-铝-硅-磷-硫-氯-氩。第5个元素是？",
+        "options": [
+          {
+            "text": "硅",
+            "score": 0
+          },
+          {
+            "text": "硫",
+            "score": 0
+          },
+          {
+            "text": "氯",
+            "score": 0
+          },
+          {
+            "text": "磷",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q173",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：sin30=0.5, cos60=0.5, tan45=1。tan45=？",
+        "options": [
+          {
+            "text": "1",
+            "score": 10
+          },
+          {
+            "text": "0.5",
+            "score": 0
+          },
+          {
+            "text": "1.414",
+            "score": 0
+          },
+          {
+            "text": "0.707",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q174",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住一组配对：苹果-红色、天空-蓝色、草-绿色。天空对应？",
+        "options": [
+          {
+            "text": "白色",
+            "score": 0
+          },
+          {
+            "text": "绿色",
+            "score": 0
+          },
+          {
+            "text": "红色",
+            "score": 0
+          },
+          {
+            "text": "蓝色",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q175",
+      "dimension": "memory",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：1,1,2,3,5,8,13,21,34。第7个数是？",
+        "options": [
+          {
+            "text": "13",
+            "score": 10
+          },
+          {
+            "text": "8",
+            "score": 0
+          },
+          {
+            "text": "21",
+            "score": 0
+          },
+          {
+            "text": "34",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q176",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住以下12个词：风/雨/雷/电/山/川/湖/海/日/月/星/辰。第8个是？",
+        "options": [
+          {
+            "text": "山",
+            "score": 0
+          },
+          {
+            "text": "川",
+            "score": 0
+          },
+          {
+            "text": "湖",
+            "score": 0
+          },
+          {
+            "text": "海",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q177",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：√2≈1.414, √3≈1.732, √5≈2.236。√3≈？",
+        "options": [
+          {
+            "text": "1.414",
+            "score": 0
+          },
+          {
+            "text": "2.236",
+            "score": 0
+          },
+          {
+            "text": "1.732",
+            "score": 10
+          },
+          {
+            "text": "1.618",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q178",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住一段话：春天来了，万物复苏，小草从土里探出头来。小草从哪里探出头？",
+        "options": [
+          {
+            "text": "土里",
+            "score": 10
+          },
+          {
+            "text": "树上",
+            "score": 0
+          },
+          {
+            "text": "水里",
+            "score": 0
+          },
+          {
+            "text": "空中",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q179",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住12个月每月天数：1月31,2月28,3月31,4月30,5月31,6月30。6月有几天？",
+        "options": [
+          {
+            "text": "31",
+            "score": 0
+          },
+          {
+            "text": "28",
+            "score": 0
+          },
+          {
+            "text": "30",
+            "score": 10
+          },
+          {
+            "text": "29",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q180",
+      "dimension": "memory",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "请记住：北-东-南-西-北-东-南-？下一个是？",
+        "options": [
+          {
+            "text": "南",
+            "score": 0
+          },
+          {
+            "text": "北",
+            "score": 0
+          },
+          {
+            "text": "东",
+            "score": 0
+          },
+          {
+            "text": "西",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q181",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "碖头可以用来做什么？选出最有创意的答案",
+        "options": [
+          {
+            "text": "盖房子",
+            "score": 0
+          },
+          {
+            "text": "以上都可以",
+            "score": 10
+          },
+          {
+            "text": "当画板画画",
+            "score": 0
+          },
+          {
+            "text": "垫脚",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q182",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "圆形可以变成什么？选最有趣的",
+        "options": [
+          {
+            "text": "太阳、披萨、车轮等都可以",
+            "score": 10
+          },
+          {
+            "text": "球",
+            "score": 0
+          },
+          {
+            "text": "纽扣",
+            "score": 0
+          },
+          {
+            "text": "硬币",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q183",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果天空是绿色的，你会想到什么？",
+        "options": [
+          {
+            "text": "不可能",
+            "score": 0
+          },
+          {
+            "text": "像大草地一样",
+            "score": 10
+          },
+          {
+            "text": "不对",
+            "score": 0
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q184",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "纸可以做什么？选最有创意的",
+        "options": [
+          {
+            "text": "擦东西",
+            "score": 0
+          },
+          {
+            "text": "写字",
+            "score": 0
+          },
+          {
+            "text": "折飞机、画画、做手工都行",
+            "score": 10
+          },
+          {
+            "text": "包东西",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q185",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果动物会说话，你最想和谁聊天？",
+        "options": [
+          {
+            "text": "不想",
+            "score": 0
+          },
+          {
+            "text": "不可能",
+            "score": 0
+          },
+          {
+            "text": "选一个喜欢的动物就好",
+            "score": 10
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q186",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个空盒子能变成什么？选最有创意的",
+        "options": [
+          {
+            "text": "没用",
+            "score": 0
+          },
+          {
+            "text": "垃圾",
+            "score": 0
+          },
+          {
+            "text": "放着",
+            "score": 0
+          },
+          {
+            "text": "可以变成房子、汽车、机器人等",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q187",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "除了写字，笔还能做什么？",
+        "options": [
+          {
+            "text": "扔掉",
+            "score": 0
+          },
+          {
+            "text": "只写字",
+            "score": 0
+          },
+          {
+            "text": "当发簪、卷头发、做手工等",
+            "score": 10
+          },
+          {
+            "text": "不能做别的",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q188",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果鱼能在天上飞，会发生什么？",
+        "options": [
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "可能很有趣，鱼和鸟做朋友",
+            "score": 10
+          },
+          {
+            "text": "不好",
+            "score": 0
+          },
+          {
+            "text": "不可能",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q189",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "雨滴像什么？选最生动的比喻",
+        "options": [
+          {
+            "text": "湿的",
+            "score": 0
+          },
+          {
+            "text": "水",
+            "score": 0
+          },
+          {
+            "text": "冷的",
+            "score": 0
+          },
+          {
+            "text": "像珍珠从天上洒落",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q190",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果给你一支神笔，你会画什么？",
+        "options": [
+          {
+            "text": "随便",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "画一些美好有用的东西",
+            "score": 10
+          },
+          {
+            "text": "不画",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q191",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "给一个杯子设计新用途，最有创意的是？",
+        "options": [
+          {
+            "text": "装水",
+            "score": 0
+          },
+          {
+            "text": "种花、做灯罩、当乐器",
+            "score": 10
+          },
+          {
+            "text": "喝水",
+            "score": 0
+          },
+          {
+            "text": "放东西",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q192",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果树能走路，世界会怎样？",
+        "options": [
+          {
+            "text": "不可能",
+            "score": 0
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "森林会搬家，树和动物交朋友",
+            "score": 10
+          },
+          {
+            "text": "不好",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q193",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "红色让你想到什么？选最丰富的联想",
+        "options": [
+          {
+            "text": "颜色",
+            "score": 0
+          },
+          {
+            "text": "红的",
+            "score": 0
+          },
+          {
+            "text": "苹果、火焰、热情、玫瑰",
+            "score": 10
+          },
+          {
+            "text": "好看",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q194",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用三角形能拼出什么？选最有创意的",
+        "options": [
+          {
+            "text": "不能拼",
+            "score": 0
+          },
+          {
+            "text": "就一个",
+            "score": 0
+          },
+          {
+            "text": "能拼圣诞树、小鱼、火箭等",
+            "score": 10
+          },
+          {
+            "text": "三角形",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q195",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        3,
+        6
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果冰不会融化，可以做什么？",
+        "options": [
+          {
+            "text": "没用",
+            "score": 0
+          },
+          {
+            "text": "不好",
+            "score": 0
+          },
+          {
+            "text": "建冰城堡、做永久雕塑等",
+            "score": 10
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q196",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个回形针有多少种用途？选出最创意的",
+        "options": [
+          {
+            "text": "做首饰、开锁、修拉链、画画工具等",
+            "score": 10
+          },
+          {
+            "text": "2种",
+            "score": 0
+          },
+          {
+            "text": "1种",
+            "score": 0
+          },
+          {
+            "text": "夹纸",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q197",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果你有隐身能力，你会做什么有趣的事？",
+        "options": [
+          {
+            "text": "想一些有趣且有意义的点子",
+            "score": 10
+          },
+          {
+            "text": "吓人",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "不用",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q198",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "给雨写一个比喻句，最好的是？",
+        "options": [
+          {
+            "text": "雨是天空的眼泪，是大地的歌声",
+            "score": 10
+          },
+          {
+            "text": "雨在下",
+            "score": 0
+          },
+          {
+            "text": "雨很大",
+            "score": 0
+          },
+          {
+            "text": "雨是水",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q199",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "除了钟表，还有什么方式可以表示时间？",
+        "options": [
+          {
+            "text": "不能",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "没有",
+            "score": 0
+          },
+          {
+            "text": "影子、花开花落、太阳位置",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q200",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果世界上没有数字，生活会怎样？",
+        "options": [
+          {
+            "text": "用图案、颜色等方式替代",
+            "score": 10
+          },
+          {
+            "text": "很糟",
+            "score": 0
+          },
+          {
+            "text": "一样",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q201",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用星星、河流、风写一句话，最美的是？",
+        "options": [
+          {
+            "text": "星星和河流和风",
+            "score": 0
+          },
+          {
+            "text": "星星俯吻河流，风为他们唱歌",
+            "score": 10
+          },
+          {
+            "text": "有星星河流风",
+            "score": 0
+          },
+          {
+            "text": "天上有星星",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q202",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个塑料瓶的10种用途中，最创意的是？",
+        "options": [
+          {
+            "text": "做花盆、笔筒、浇水壶、生态瓶等",
+            "score": 10
+          },
+          {
+            "text": "回收",
+            "score": 0
+          },
+          {
+            "text": "扔掉",
+            "score": 0
+          },
+          {
+            "text": "喝水",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q203",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果颜色有味道，蓝色是什么味道？",
+        "options": [
+          {
+            "text": "不能吃",
+            "score": 0
+          },
+          {
+            "text": "没味道",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "像薄荷一样清凉",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q204",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "设计一个新节日，最有趣的是？",
+        "options": [
+          {
+            "text": "不好玩",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "倒着走的日子/左撲子日等有趣创意",
+            "score": 10
+          },
+          {
+            "text": "不想设计",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q205",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果书会自己讲故事，世界会怎样？",
+        "options": [
+          {
+            "text": "书成为朋友，知识自动传播",
+            "score": 10
+          },
+          {
+            "text": "不可能",
+            "score": 0
+          },
+          {
+            "text": "不好",
+            "score": 0
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q206",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用三种方式形容安静，最有创意的是？",
+        "options": [
+          {
+            "text": "安静得能听见蚂蚁走路/像深海一样沉默",
+            "score": 10
+          },
+          {
+            "text": "安静极了",
+            "score": 0
+          },
+          {
+            "text": "不吵",
+            "score": 0
+          },
+          {
+            "text": "很安静",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q207",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果没有了重力，最有趣的变化是？",
+        "options": [
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "人在空中游泳、水变成球飘浮",
+            "score": 10
+          },
+          {
+            "text": "不好",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q208",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "给月亮写一封信，最好的开头是？",
+        "options": [
+          {
+            "text": "亲爱的月亮，你是不是也偷偷看地球？",
+            "score": 10
+          },
+          {
+            "text": "你好月亮",
+            "score": 0
+          },
+          {
+            "text": "月亮",
+            "score": 0
+          },
+          {
+            "text": "月亮你好",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q209",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个纸杯的设计改造方案，最创新的是？",
+        "options": [
+          {
+            "text": "不改造",
+            "score": 0
+          },
+          {
+            "text": "变成传声筒、迷你花园、叠叠塔等",
+            "score": 10
+          },
+          {
+            "text": "就这样",
+            "score": 0
+          },
+          {
+            "text": "扔掉",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q210",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        6,
+        9
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果音乐能看见，它是什么形状？",
+        "options": [
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "像流动的彩虹，时而尖锐时而圆润",
+            "score": 10
+          },
+          {
+            "text": "没形状",
+            "score": 0
+          },
+          {
+            "text": "不能看",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q211",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用假如...就...造一个最有想象力的句子",
+        "options": [
+          {
+            "text": "假如累就休息",
+            "score": 0
+          },
+          {
+            "text": "假如饱了就吃",
+            "score": 0
+          },
+          {
+            "text": "假如我是风，就穿越整个海洋去看你",
+            "score": 10
+          },
+          {
+            "text": "假如下雨就不出去",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q212",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个旧轮胎的20种用途中，最有创意的是？",
+        "options": [
+          {
+            "text": "放着",
+            "score": 0
+          },
+          {
+            "text": "烧了",
+            "score": 0
+          },
+          {
+            "text": "做秋千、花坛、健身器材、艺术装置",
+            "score": 10
+          },
+          {
+            "text": "扔了",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q213",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "设计一座未来的学校，最创新的是？",
+        "options": [
+          {
+            "text": "在太空中/用VR上课/没有教室的森林学校",
+            "score": 10
+          },
+          {
+            "text": "和现在一样",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "不想设计",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q214",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用比喻形容时间，最深刻的是？",
+        "options": [
+          {
+            "text": "时间快",
+            "score": 0
+          },
+          {
+            "text": "时间是小偷，偷走我们的青春",
+            "score": 10
+          },
+          {
+            "text": "时间很长",
+            "score": 0
+          },
+          {
+            "text": "时间慢",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q215",
+      "dimension": "creativity",
+      "difficulty": 1,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果动物有职业，猫最适合做什么？",
+        "options": [
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "不能工作",
+            "score": 0
+          },
+          {
+            "text": "侦探/模特/瑜伽教练等有趣联想",
+            "score": 10
+          },
+          {
+            "text": "没用",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q216",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用河流、时间、记忆写一段散文，最好的是？",
+        "options": [
+          {
+            "text": "河流和时间和记忆",
+            "score": 0
+          },
+          {
+            "text": "河流时间记忆",
+            "score": 0
+          },
+          {
+            "text": "记忆像河流，在时间的河床上缓缓流淌",
+            "score": 10
+          },
+          {
+            "text": "有三个词",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q217",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个废弃工厂改造方案，最创新的是？",
+        "options": [
+          {
+            "text": "放着",
+            "score": 0
+          },
+          {
+            "text": "不管",
+            "score": 0
+          },
+          {
+            "text": "改造成艺术区/攀岩馆/垂直农场",
+            "score": 10
+          },
+          {
+            "text": "拆了",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q218",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果你发明一种新颜色，它叫什么？",
+        "options": [
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "没颜色",
+            "score": 0
+          },
+          {
+            "text": "叫不上来",
+            "score": 0
+          },
+          {
+            "text": "黎明灰/深海紫等富有想象力的命名",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q219",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "设计一种新的交通方式，最有趣的是？",
+        "options": [
+          {
+            "text": "走路",
+            "score": 0
+          },
+          {
+            "text": "地下胶囊管道/个人飞行翼/磁悬浮滑板",
+            "score": 10
+          },
+          {
+            "text": "不想",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q220",
+      "dimension": "creativity",
+      "difficulty": 2,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用拟人手法描写老树，最好的是？",
+        "options": [
+          {
+            "text": "树在那里",
+            "score": 0
+          },
+          {
+            "text": "老树供偻着腰，用皱纹诉说着百年的故事",
+            "score": 10
+          },
+          {
+            "text": "树老了",
+            "score": 0
+          },
+          {
+            "text": "树很大",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q221",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "写一首关于未来的短诗，最好的是？",
+        "options": [
+          {
+            "text": "未来很好",
+            "score": 0
+          },
+          {
+            "text": "未来未来",
+            "score": 0
+          },
+          {
+            "text": "我想未来",
+            "score": 0
+          },
+          {
+            "text": "未来是尚未拆封的礼物，每一秒都在打开",
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q222",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "一个易拉罐的30种用途中，最意想不到的是？",
+        "options": [
+          {
+            "text": "回收",
+            "score": 0
+          },
+          {
+            "text": "放着",
+            "score": 0
+          },
+          {
+            "text": "做WiFi信号放大器/微型吉他/首饰",
+            "score": 10
+          },
+          {
+            "text": "扔了",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q223",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "如果记忆可以存储和交易，社会会怎样？",
+        "options": [
+          {
+            "text": "出现记忆银行、记忆拍卖行等深度想象",
+            "score": 10
+          },
+          {
+            "text": "害怕",
+            "score": 0
+          },
+          {
+            "text": "不好",
+            "score": 0
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q224",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "用假如世界只剩一天写一个开头，最好的是？",
+        "options": [
+          {
+            "text": "不知道写什么",
+            "score": 0
+          },
+          {
+            "text": "假如世界只剩一天，我要把每秒都活成永恒",
+            "score": 10
+          },
+          {
+            "text": "世界末日",
+            "score": 0
+          },
+          {
+            "text": "最后一天",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "Q225",
+      "dimension": "creativity",
+      "difficulty": 3,
+      "ageRange": [
+        9,
+        12
+      ],
+      "questionType": "text-choice",
+      "content": {
+        "title": "设计一种全新的语言交流方式，最创新的是？",
+        "options": [
+          {
+            "text": "颜色/气味/脑波直接传递情感的方式",
+            "score": 10
+          },
+          {
+            "text": "不知道",
+            "score": 0
+          },
+          {
+            "text": "不能",
+            "score": 0
+          },
+          {
+            "text": "不想",
+            "score": 0
+          }
+        ]
+      }
+    }
+  ]
+}

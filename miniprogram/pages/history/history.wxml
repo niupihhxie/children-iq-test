@@ -1,0 +1,48 @@
+<view class="container">
+  <!-- 儿童选择器 -->
+  <view class="child-selector" wx:if="{{children.length > 1}}">
+    <scroll-view scroll-x class="child-scroll">
+      <view
+        class="child-chip {{selectedChildId === item._id ? 'active' : ''}}"
+        wx:for="{{children}}"
+        wx:key="_id"
+        data-id="{{item._id}}"
+        bindtap="onSelectChild"
+      >
+        {{item.gender === '男' ? '👦' : '👧'}} {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 报告列表 -->
+  <view class="report-list" wx:if="{{reports.length > 0}}">
+    <view
+      class="report-card"
+      wx:for="{{reports}}"
+      wx:key="_id"
+      data-id="{{item._id}}"
+      bindtap="onViewReport"
+    >
+      <view class="report-left">
+        <view class="report-emoji">{{typeEmojis[item.intelligenceType.id] || '🌟'}}</view>
+      </view>
+      <view class="report-center">
+        <view class="report-type">{{item.intelligenceType.name}}</view>
+        <view class="report-tag">{{item.intelligenceType.tag}}</view>
+        <view class="report-date">{{item.dateText}}</view>
+      </view>
+      <view class="report-right">
+        <view class="report-score">{{item.totalScore}}</view>
+        <view class="report-score-label">总分</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{reports.length === 0 && !loading}}">
+    <view class="empty-emoji">📋</view>
+    <view class="empty-text">还没有测试记录</view>
+    <view class="empty-sub">完成第一次测试后，这里会显示报告</view>
+    <button class="btn-primary" bindtap="goTest" style="margin-top: 40rpx; padding: 20rpx 60rpx;">去测试</button>
+  </view>
+</view>

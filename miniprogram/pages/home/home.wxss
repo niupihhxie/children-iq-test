@@ -1,0 +1,111 @@
+.container {
+  min-height: 100vh;
+  padding-bottom: 60rpx;
+}
+
+/* Hero区域 */
+.hero {
+  background: linear-gradient(135deg, #FF9500 0%, #FFB347 50%, #FFCC80 100%);
+  padding: 60rpx 40rpx 50rpx;
+  text-align: center;
+  border-radius: 0 0 40rpx 40rpx;
+}
+.hero-emoji {
+  font-size: 100rpx;
+  margin-bottom: 20rpx;
+}
+.hero-title {
+  font-size: 52rpx;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2rpx 8rpx rgba(0,0,0,0.1);
+}
+.hero-subtitle {
+  font-size: 30rpx;
+  color: rgba(255,255,255,0.9);
+  margin-top: 12rpx;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12rpx;
+  margin-top: 24rpx;
+}
+.tag {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 24rpx;
+  padding: 6rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+/* 菜单网格 */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  gap: 24rpx;
+}
+.menu-item {
+  width: calc(50% - 12rpx);
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 40rpx 20rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.06);
+  transition: all 0.2s;
+}
+.menu-item:active {
+  transform: scale(0.95);
+}
+.menu-icon {
+  font-size: 64rpx;
+  margin-bottom: 12rpx;
+}
+.menu-text {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 介绍卡片 */
+.intro-card {
+  margin: 0 30rpx;
+}
+.intro-text {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8;
+}
+.intro-features {
+  margin-top: 30rpx;
+}
+.feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+.feature-icon {
+  font-size: 36rpx;
+  margin-right: 16rpx;
+}
+.feature-text {
+  font-size: 28rpx;
+  color: #555;
+}
+
+/* 快速开始 */
+.quick-start {
+  padding: 40rpx 60rpx;
+}
+.btn-large {
+  width: 100%;
+  font-size: 38rpx;
+  padding: 28rpx 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20rpx;
+}

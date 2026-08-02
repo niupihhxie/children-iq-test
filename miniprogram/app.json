@@ -1,0 +1,21 @@
+{
+  "desc": "儿童智力测试小程序 - 基于MBTI模式的儿童智力评估产品",
+  "pages": [
+    "pages/home/home",
+    "pages/profiles/profiles",
+    "pages/test/test",
+    "pages/report/report",
+    "pages/history/history",
+    "pages/trend/trend"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF9500",
+    "navigationBarTitleText": "儿童智力测试",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FFF8F0"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "cloud": true
+}

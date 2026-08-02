@@ -1,0 +1,102 @@
+<view class="container">
+  <!-- 标题 -->
+  <view class="page-header" wx:if="{{!fromTest}}">
+    <view class="title-large">儿童档案</view>
+    <view class="text-muted mt-20">为每个孩子创建独立档案，记录成长轨迹</view>
+  </view>
+
+  <!-- 选择提示 -->
+  <view class="page-header" wx:if="{{fromTest}}">
+    <view class="title-large">选择测试对象</view>
+    <view class="text-muted mt-20">请选择要进行测试的孩子</view>
+  </view>
+
+  <!-- 档案列表 -->
+  <view class="profile-list" wx:if="{{profiles.length > 0}}">
+    <view
+      class="profile-card"
+      wx:for="{{profiles}}"
+      wx:key="_id"
+      bindtap="onSelectProfile"
+      data-id="{{item._id}}"
+      data-name="{{item.name}}"
+    >
+      <view class="profile-avatar">
+        <text class="avatar-emoji">{{item.gender === '男' ? '👦' : '👧'}}</text>
+      </view>
+      <view class="profile-info">
+        <view class="profile-name">{{item.name}}</view>
+        <view class="profile-detail">{{item.gender}} · {{item.ageText}}</view>
+      </view>
+      <view class="profile-action" wx:if="{{fromTest}}">
+        <text class="action-text">测试 →</text>
+      </view>
+      <view class="profile-action" wx:else catchtap="onEditProfile" data-id="{{item._id}}">
+        <text class="action-text">编辑</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{profiles.length === 0 && !loading}}">
+    <view class="empty-emoji">👶</view>
+    <view class="empty-text">还没有儿童档案</view>
+    <view class="empty-sub">点击下方按钮创建第一个档案</view>
+  </view>
+
+  <!-- 添加按钮 -->
+  <view class="add-btn-area">
+    <button class="btn-primary btn-large" bindtap="onAddProfile">
+      ➕ 添加儿童档案
+    </button>
+  </view>
+</view>
+
+<!-- 添加/编辑弹窗 -->
+<view class="modal-mask" wx:if="{{showModal}}" bindtap="closeModal">
+  <view class="modal-content" catchtap="stopProp">
+    <view class="modal-title">{{editingId ? '编辑档案' : '添加档案'}}</view>
+
+    <view class="form-item">
+      <text class="form-label">姓名</text>
+      <input
+        class="form-input"
+        placeholder="请输入孩子姓名"
+        value="{{formName}}"
+        bindinput="onNameInput"
+      />
+    </view>
+
+    <view class="form-item">
+      <text class="form-label">性别</text>
+      <view class="gender-picker">
+        <view
+          class="gender-option {{formGender === '男' ? 'active' : ''}}"
+          bindtap="onGenderPick"
+          data-gender="男"
+        >👦 男</view>
+        <view
+          class="gender-option {{formGender === '女' ? 'active' : ''}}"
+          bindtap="onGenderPick"
+          data-gender="女"
+        >👧 女</view>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <text class="form-label">出生日期</text>
+      <picker mode="date" value="{{formBirthDate}}" start="2014-01-01" end="{{today}}" bindchange="onDateChange">
+        <view class="form-input picker-text">{{formBirthDate || '请选择出生日期'}}</view>
+      </picker>
+    </view>
+
+    <view class="modal-btns">
+      <button class="btn-outline modal-btn" bindtap="closeModal">取消</button>
+      <button class="btn-primary modal-btn" bindtap="onSaveProfile" loading="{{saving}}">保存</button>
+    </view>
+
+    <view class="delete-btn" wx:if="{{editingId}}" bindtap="onDeleteProfile">
+      🗑️ 删除该档案
+    </view>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+<view class="container">
+  <!-- 顶部Banner -->
+  <view class="hero">
+    <view class="hero-emoji">🧠</view>
+    <view class="hero-title">儿童智力测试</view>
+    <view class="hero-subtitle">3分钟发现孩子的天赋方向</view>
+    <view class="hero-tags">
+      <text class="tag">逻辑推理</text>
+      <text class="tag">语言理解</text>
+      <text class="tag">空间想象</text>
+      <text class="tag">记忆力</text>
+      <text class="tag">创造力</text>
+    </view>
+  </view>
+
+  <!-- 功能入口 -->
+  <view class="menu-grid">
+    <view class="menu-item" bindtap="goTest">
+      <view class="menu-icon">🎯</view>
+      <view class="menu-text">开始测试</view>
+    </view>
+    <view class="menu-item" bindtap="goProfiles">
+      <view class="menu-icon">👶</view>
+      <view class="menu-text">儿童档案</view>
+    </view>
+    <view class="menu-item" bindtap="goHistory">
+      <view class="menu-icon">📋</view>
+      <view class="menu-text">历史报告</view>
+    </view>
+    <view class="menu-item" bindtap="goTrend">
+      <view class="menu-icon">📈</view>
+      <view class="menu-text">成长趋势</view>
+    </view>
+  </view>
+
+  <!-- 介绍卡片 -->
+  <view class="card intro-card">
+    <view class="title-medium mb-20">🌟 测试介绍</view>
+    <view class="intro-text">
+      本测试基于MBTI测试模式，面向3-12岁儿童，通过30道趣味题目评估孩子在逻辑推理、语言理解、空间想象、记忆力、创造力五大维度的智力表现，生成个性化发展建议报告。
+    </view>
+    <view class="intro-features">
+      <view class="feature-row">
+        <text class="feature-icon">⚡</text>
+        <text class="feature-text">仅需3分钟，30道趣味题</text>
+      </view>
+      <view class="feature-row">
+        <text class="feature-icon">📊</text>
+        <text class="feature-text">五维度雷达图，直观展示</text>
+      </view>
+      <view class="feature-row">
+        <text class="feature-icon">💡</text>
+        <text class="feature-text">个性化发展建议</text>
+      </view>
+      <view class="feature-row">
+        <text class="feature-icon">🔄</text>
+        <text class="feature-text">支持多次测试，追踪成长</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 快速开始按钮 -->
+  <view class="quick-start" wx:if="{{hasChildren}}">
+    <button class="btn-primary btn-large" bindtap="goTest">
+      🚀 立即开始测试
+    </button>
+  </view>
+  <view class="quick-start" wx:else>
+    <button class="btn-primary btn-large" bindtap="goProfiles">
+      👶 先创建儿童档案
+    </button>
+  </view>
+
+  <view class="footer">
+    <text class="text-muted">适合3-12岁儿童 · 请家长陪同测试</text>
+  </view>
+</view>

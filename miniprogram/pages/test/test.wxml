@@ -1,0 +1,66 @@
+<view class="test-container" wx:if="{{!loading && !finished}}">
+
+  <!-- 进度条 -->
+  <view class="progress-bar-wrap">
+    <view class="progress-info">
+      <text class="progress-text">{{currentIndex + 1}} / {{totalQuestions}}</text>
+      <text class="progress-dim">{{dimName}}</text>
+    </view>
+    <view class="progress-bar">
+      <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+    </view>
+  </view>
+
+  <!-- 题目区域 -->
+  <view class="question-area">
+    <view class="dim-badge" style="background: {{dimColor}}">
+      <text>{{dimIcon}} {{dimName}}</text>
+    </view>
+
+    <view class="question-title">
+      <text class="q-prefix">Q{{currentIndex + 1}}</text>
+      <text class="q-content">{{currentQuestion.content.title}}</text>
+    </view>
+
+    <!-- 选项列表 -->
+    <view class="options-list">
+      <view
+        class="option-item {{selectedOption === index ? 'selected' : ''}} {{showResult && option.score > 0 ? 'correct' : ''}} {{showResult && selectedOption === index && option.score === 0 ? 'wrong' : ''}}"
+        wx:for="{{currentQuestion.content.options}}"
+        wx:key="index"
+        data-index="{{index}}"
+        bindtap="onSelectOption"
+      >
+        <view class="option-label">{{optionLabels[index]}}</view>
+        <view class="option-text">{{item.text || option.text}}</view>
+        <view class="option-result" wx:if="{{showResult && option.score > 0}}">✓</view>
+        <view class="option-result wrong" wx:if="{{showResult && selectedOption === index && option.score === 0}}">✗</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="bottom-area">
+    <button
+      class="btn-primary btn-next"
+      bindtap="onNext"
+      disabled="{{selectedOption === -1 || submitting}}"
+      loading="{{submitting}}"
+    >
+      {{currentIndex + 1 >= totalQuestions ? '完成测试 🎉' : '下一题 →'}}
+    </button>
+  </view>
+</view>
+
+<!-- 加载中 -->
+<view class="loading-state" wx:if="{{loading}}">
+  <view class="loading-emoji">🎯</view>
+  <view class="loading-text">正在准备题目...</view>
+</view>
+
+<!-- 测试完成过渡 -->
+<view class="finish-state" wx:if="{{finished}}">
+  <view class="finish-emoji">🎉</view>
+  <view class="finish-text">测试完成！</view>
+  <view class="finish-sub">正在生成报告...</view>
+</view>

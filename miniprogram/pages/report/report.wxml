@@ -1,0 +1,87 @@
+<view class="report-container" wx:if="{{!loading}}">
+  <!-- 智力类型卡片 -->
+  <view class="type-card">
+    <view class="type-emoji">{{typeEmoji}}</view>
+    <view class="type-name">{{report.intelligenceType.name}}</view>
+    <view class="type-tag">{{report.intelligenceType.tag}}</view>
+    <view class="total-score">
+      <text class="score-num">{{report.totalScore}}</text>
+      <text class="score-unit">分</text>
+    </view>
+    <view class="score-label">综合智力评分</view>
+  </view>
+
+  <!-- 雷达图 -->
+  <view class="chart-card">
+    <view class="card-title">📊 五维度能力雷达图</view>
+    <canvas
+      type="2d"
+      id="radarCanvas"
+      class="radar-canvas"
+      bindtouchstart="onCanvasTouch"
+    ></canvas>
+    <!-- 维度分数列表 -->
+    <view class="dim-scores">
+      <view class="dim-score-item" wx:for="{{dimScoreList}}" wx:key="key">
+        <view class="dim-dot" style="background: {{item.color}}"></view>
+        <view class="dim-info">
+          <text class="dim-name">{{item.icon}} {{item.name}}</text>
+          <text class="dim-val">{{item.score}}分</text>
+        </view>
+        <view class="dim-bar-wrap">
+          <view class="dim-bar" style="width: {{item.score}}%; background: {{item.color}}"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 详细分析 -->
+  <view class="card detail-card">
+    <view class="card-title">📝 各维度详情</view>
+    <view class="dim-detail" wx:for="{{dimDetailList}}" wx:key="key">
+      <view class="dim-detail-header">
+        <text class="dim-detail-name" style="color: {{item.color}}">{{item.icon}} {{item.name}}</text>
+        <text class="dim-detail-score">{{item.score}}/100</text>
+      </view>
+      <view class="dim-detail-stats">
+        <text>答对 {{item.correct}}/{{item.answered}} 题</text>
+        <text>正确率 {{item.accuracy}}%</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 发展建议 -->
+  <view class="card suggestion-card">
+    <view class="card-title">💡 个性化发展建议</view>
+    <view class="suggestion-item" wx:for="{{report.suggestions}}" wx:key="index">
+      <view class="suggestion-type {{item.type}}">
+        {{item.type === 'advantage' ? '🌟' : item.type === 'improve' ? '📈' : '🌈'}}
+        {{item.title}}
+      </view>
+      <view class="suggestion-content">{{item.content}}</view>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="action-area">
+    <button class="btn-primary btn-action" bindtap="onRetest">
+      🔄 再测一次
+    </button>
+    <button class="btn-outline btn-action" open-type="share">
+      📤 分享报告
+    </button>
+    <button class="btn-outline btn-action" bindtap="goHistory">
+      📋 查看历史
+    </button>
+  </view>
+
+  <view class="footer-tip">
+    <text class="text-muted">本测试仅供参考，每个孩子都是独一无二的🌟</text>
+  </view>
+</view>
+
+<!-- 加载中 -->
+<view class="loading-state" wx:if="{{loading}}">
+  <view class="loading-emoji">📊</view>
+  <view class="loading-text">正在生成报告...</view>
+</view>

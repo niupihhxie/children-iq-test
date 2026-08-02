@@ -1,0 +1,56 @@
+.container { min-height: 100vh; padding-bottom: 40rpx; }
+
+.child-selector {
+  padding: 20rpx 0;
+  background: #fff;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.04);
+}
+.child-scroll {
+  white-space: nowrap;
+  padding: 0 20rpx;
+}
+.child-chip {
+  display: inline-block;
+  padding: 12rpx 28rpx;
+  margin-right: 16rpx;
+  background: #f5f5f5;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  transition: all 0.2s;
+}
+.child-chip.active {
+  background: #FF9500;
+  color: #fff;
+  font-weight: 600;
+}
+
+.report-list { padding: 20rpx 30rpx; }
+.report-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.06);
+  transition: all 0.2s;
+}
+.report-card:active { transform: scale(0.98); }
+.report-left { margin-right: 24rpx; }
+.report-emoji { font-size: 56rpx; }
+.report-center { flex: 1; }
+.report-type { font-size: 34rpx; font-weight: 700; color: #333; }
+.report-tag { font-size: 26rpx; color: #FF9500; margin-top: 4rpx; }
+.report-date { font-size: 24rpx; color: #bbb; margin-top: 8rpx; }
+.report-right { text-align: center; }
+.report-score { font-size: 48rpx; font-weight: 900; color: #FF9500; }
+.report-score-label { font-size: 22rpx; color: #999; }
+
+.empty-state {
+  text-align: center;
+  padding: 120rpx 40rpx;
+}
+.empty-emoji { font-size: 120rpx; margin-bottom: 30rpx; }
+.empty-text { font-size: 36rpx; font-weight: 600; color: #666; }
+.empty-sub { font-size: 28rpx; color: #aaa; margin-top: 12rpx; }

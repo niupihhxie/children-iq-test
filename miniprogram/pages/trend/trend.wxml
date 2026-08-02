@@ -1,0 +1,78 @@
+<view class="container">
+  <!-- 儿童选择器 -->
+  <view class="child-selector" wx:if="{{children.length > 1}}">
+    <scroll-view scroll-x class="child-scroll">
+      <view
+        class="child-chip {{selectedChildId === item._id ? 'active' : ''}}"
+        wx:for="{{children}}"
+        wx:key="_id"
+        data-id="{{item._id}}"
+        bindtap="onSelectChild"
+      >
+        {{item.gender === '男' ? '👦' : '👧'}} {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 趋势图 -->
+  <view class="chart-card" wx:if="{{reports.length > 0}}">
+    <view class="card-title">📈 五维度成长趋势</view>
+    <canvas type="2d" id="trendCanvas" class="trend-canvas"></canvas>
+
+    <!-- 图例 -->
+    <view class="legend">
+      <view class="legend-item" wx:for="{{legendItems}}" wx:key="key">
+        <view class="legend-dot" style="background: {{item.color}}"></view>
+        <text class="legend-text">{{item.icon}} {{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 数据统计 -->
+  <view class="card stats-card" wx:if="{{reports.length > 0}}">
+    <view class="card-title">📊 测试统计</view>
+    <view class="stats-grid">
+      <view class="stat-item">
+        <view class="stat-num">{{reports.length}}</view>
+        <view class="stat-label">测试次数</view>
+      </view>
+      <view class="stat-item">
+        <view class="stat-num">{{avgScore}}</view>
+        <view class="stat-label">平均总分</view>
+      </view>
+      <view class="stat-item">
+        <view class="stat-num">{{bestScore}}</view>
+        <view class="stat-label">最高总分</view>
+      </view>
+      <view class="stat-item">
+        <view class="stat-num">{{latestScore}}</view>
+        <view class="stat-label">最近总分</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 各维度变化 -->
+  <view class="card dim-trend-card" wx:if="{{reports.length > 1}}">
+    <view class="card-title">🔄 各维度变化对比</view>
+    <view class="dim-trend-item" wx:for="{{dimTrendList}}" wx:key="key">
+      <view class="dim-trend-header">
+        <text style="color: {{item.color}}">{{item.icon}} {{item.name}}</text>
+        <text class="trend-change {{item.change > 0 ? 'up' : item.change < 0 ? 'down' : ''}}">
+          {{item.change > 0 ? '↑' : item.change < 0 ? '↓' : '—'}} {{item.changeText}}
+        </text>
+      </view>
+      <view class="dim-trend-values">
+        <text class="trend-first">首次 {{item.firstScore}}</text>
+        <text class="trend-arrow">→</text>
+        <text class="trend-last">最近 {{item.lastScore}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{reports.length === 0 && !loading}}">
+    <view class="empty-emoji">📈</view>
+    <view class="empty-text">还没有足够的测试数据</view>
+    <view class="empty-sub">完成2次以上测试后可查看成长趋势</view>
+  </view>
+</view>
