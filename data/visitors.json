@@ -5,5 +5,13 @@
   },
   "ips": [
     "141.11.146.65"
+  ],
+  "totalRevenue": 1,
+  "totalPayments": 1,
+  "dailyRevenue": {
+    "2026-08-02": 1
+  },
+  "paymentIPs": [
+    "141.11.146.65"
   ]
 }
