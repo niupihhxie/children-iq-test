@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>儿童智力测试</title>
+<style>
+:root {
+  --primary: #FF9500;
+  --primary-light: #FFF3E0;
+  --bg: #F5F6FA;
+  --card: #FFFFFF;
+  --text: #333333;
+  --text-secondary: #999999;
+  --border: #EEEEEE;
+  --success: #4CAF50;
+  --danger: #FF6B6B;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  --radius: 16px;
+  --dim-logic: #FF6B6B;
+  --dim-language: #4ECDC4;
+  --dim-spatial: #45B7D1;
+  --dim-memory: #FFA07A;
+  --dim-creativity: #98D8C8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Shell */
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #FF9500, #FF6B35);
+  color: #fff;
+  padding: 20px 20px 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(255,149,0,0.3);
+}
+.app-header h1 { font-size: 20px; font-weight: 700; }
+.app-header .subtitle { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+.visitor-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.2); border-radius: 20px;
+  padding: 4px 14px; font-size: 11px; margin-top: 8px;
+  backdrop-filter: blur(4px);
+}
+.visitor-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #4CAF50; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:0.4 } }
+
+/* Tab Navigation */
+.tab-bar {
+  display: flex;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 78px;
+  z-index: 99;
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.tab-item.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 600;
+}
+.tab-item .tab-icon { font-size: 18px; display: block; margin-bottom: 2px; }
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  padding-bottom: 24px;
+}
+
+/* Views */
+.view { display: none; }
+.view.active { display: block; }
+
+/* Cards */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  gap: 6px;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #FF9500, #FF6B35);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255,149,0,0.35);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(255,149,0,0.4); }
+.btn-primary:active { transform: scale(0.97); }
+.btn-block { width: 100%; display: flex; }
+.btn-outline {
+  background: var(--card);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn-small {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Age Selector */
+.age-options { display: flex; gap: 10px; flex-wrap: wrap; }
+.age-option {
+  flex: 1;
+  min-width: 80px;
+  padding: 16px 8px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--card);
+}
+.age-option:hover { border-color: var(--primary-light); }
+.age-option.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+.age-option .age-label { font-size: 14px; font-weight: 600; display: block; }
+.age-option .age-range { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+
+/* Dimension Tags */
+.dim-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  margin-right: 4px;
+}
+.dim-tag.logic { background: var(--dim-logic); }
+.dim-tag.language { background: var(--dim-language); }
+.dim-tag.spatial { background: var(--dim-spatial); }
+.dim-tag.memory { background: var(--dim-memory); }
+.dim-tag.creativity { background: var(--dim-creativity); }
+
+/* Test Question */
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.question-counter {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #FF6B35);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+.question-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.question-image {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  object-fit: contain;
+  background: #f0f0f0;
+}
+.options-list { display: flex; flex-direction: column; gap: 10px; }
+.option-item {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.option-item:hover { border-color: var(--primary); background: var(--primary-light); }
+.option-item.selected { border-color: var(--primary); background: var(--primary-light); }
+.option-item.correct { border-color: var(--success); background: #E8F5E9; }
+.option-item.wrong { border-color: var(--danger); background: #FFEBEE; }
+.option-letter {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.option-item.selected .option-letter { background: var(--primary); color: #fff; }
+.option-item.correct .option-letter { background: var(--success); color: #fff; }
+.option-item.wrong .option-letter { background: var(--danger); color: #fff; }
+.option-text { font-size: 15px; line-height: 1.4; }
+
+/* Score Display */
+.score-hero {
+  text-align: center;
+  padding: 20px 0;
+}
+.score-big {
+  font-size: 72px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF9500, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.score-label { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+.score-grade {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Intelligence Type Badge */
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: var(--primary-light);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 12px 0;
+}
+
+/* Dimension Scores */
+.dim-scores { display: flex; flex-direction: column; gap: 10px; }
+.dim-score-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dim-score-icon { font-size: 22px; width: 32px; text-align: center; }
+.dim-score-name { width: 56px; font-size: 13px; color: var(--text-secondary); }
+.dim-score-bar-wrap {
+  flex: 1;
+  height: 24px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.dim-score-bar {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.8s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.dim-score-val {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 30px;
+  text-align: right;
+}
+
+/* Radar Chart */
+.radar-container {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.radar-container canvas { max-width: 100%; }
+
+/* Trend Chart */
+.trend-container {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.trend-container canvas { max-width: 100%; }
+
+/* History List */
+.history-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.history-item:hover { transform: translateY(-1px); }
+.history-item .hi-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.history-item .hi-date { font-size: 12px; color: var(--text-secondary); }
+.history-item .hi-score { font-size: 20px; font-weight: 800; color: var(--primary); }
+.history-item .hi-type { font-size: 13px; color: var(--text-secondary); }
+.history-item .hi-dims { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.hi-dim {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Children List */
+.child-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.child-avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.child-info { flex: 1; }
+.child-name { font-size: 15px; font-weight: 600; }
+.child-meta { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.child-test-count {
+  font-size: 12px;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Form */
+.form-group { margin-bottom: 16px; }
+.form-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; display: block; }
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  font-size: 15px;
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-input:focus { border-color: var(--primary); }
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  font-size: 15px;
+  background: var(--card);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+.empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
+
+/* Toast */
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: toastIn 0.3s ease;
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Answer Feedback */
+.feedback-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  z-index: 200;
+  animation: slideUp 0.3s ease;
+  max-width: 480px;
+  margin: 0 auto;
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.feedback-correct {
+  background: #E8F5E9;
+  border-top: 3px solid var(--success);
+  color: #2E7D32;
+  padding: 14px 20px;
+  border-radius: 16px 16px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+.feedback-wrong {
+  background: #FFEBEE;
+  border-top: 3px solid var(--danger);
+  color: #C62828;
+  padding: 14px 20px;
+  border-radius: 16px 16px 0 0;
+  text-align: center;
+}
+
+/* Modal */
+.modal-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 300;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.modal-content {
+  background: var(--card);
+  border-radius: 20px 20px 0 0;
+  padding: 24px 20px 32px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease;
+}
+.modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Suggestion Cards */
+.suggestion-card {
+  background: #FFF8E1;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border-left: 4px solid var(--primary);
+}
+.suggestion-card.strength { background: #E8F5E9; border-left-color: var(--success); }
+.suggestion-card.weakness { background: #FFF3E0; border-left-color: var(--primary); }
+
+/* Tips Lock */
+.tips-locked {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 180px;
+}
+.tips-locked-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(2px);
+}
+.tips-lock-icon { font-size: 40px; margin-bottom: 8px; }
+.tips-lock-title { font-size: 16px; font-weight: 700; color: #333; margin-bottom: 8px; }
+.tips-lock-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px; }
+.tips-unlock-btn { padding: 10px 22px; border-radius: 20px; font-size: 14px; }
+.tips-blur-layer { padding: 8px 0; }
+
+/* Payment Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+.modal-box {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+  transform: translateY(16px);
+  transition: transform 0.25s ease;
+}
+.modal-overlay.active .modal-box { transform: translateY(0); }
+.modal-title { font-size: 18px; font-weight: 700; text-align: center; margin-bottom: 6px; }
+.modal-subtitle { font-size: 13px; color: var(--text-secondary); text-align: center; margin-bottom: 18px; }
+.pay-options { display: flex; gap: 12px; margin-bottom: 16px; }
+.pay-option {
+  flex: 1;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pay-option.active { border-color: var(--primary); background: #FFF8E1; }
+.pay-option img { width: 36px; height: 36px; object-fit: contain; margin-bottom: 6px; }
+.pay-option div { font-size: 13px; font-weight: 600; }
+.pay-qr-wrap {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pay-qr-wrap img { max-width: 220px; width: 100%; border-radius: 8px; }
+.pay-hint { font-size: 12px; color: var(--text-secondary); text-align: center; margin-bottom: 16px; }
+.modal-actions { display: flex; gap: 10px; }
+.modal-actions .btn { flex: 1; }
+.pay-done-btn { background: #07C160; color: #fff; }
+
+/* Responsive */
+@media (max-width: 360px) {
+  .age-options { gap: 6px; }
+  .age-option { padding: 12px 4px; }
+  .age-option .age-label { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="app-container">
+  <div class="app-header">
+    <h1>🧠 儿童智力测试</h1>
+    <div class="subtitle">科学评估 · 发现天赋</div>
+    <div class="visitor-badge">
+      <span class="dot"></span>
+      <span id="visitorCount">...</span> 次访问
+    </div>
+  </div>
+
+  <div class="tab-bar" id="tabBar">
+    <div class="tab-item active" data-tab="home">
+      <span class="tab-icon">🏠</span>首页
+    </div>
+    <div class="tab-item" data-tab="history">
+      <span class="tab-icon">📋</span>历史
+    </div>
+    <div class="tab-item" data-tab="trend">
+      <span class="tab-icon">📈</span>趋势
+    </div>
+    <div class="tab-item" data-tab="kids">
+      <span class="tab-icon">👶</span>宝贝
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Home View -->
+    <div class="view active" id="view-home">
+      <div class="card">
+        <div class="card-title">🦸 谁要挑战？</div>
+        <div id="childrenList"></div>
+        <button class="btn btn-outline btn-block" onclick="showAddChildModal()" style="margin-top:8px;">
+          ➕ 添加宝贝
+        </button>
+      </div>
+
+      <div class="card" id="ageSelectCard" style="display:none;">
+        <div class="card-title">📐 选择年龄段</div>
+        <div class="age-options" id="ageOptions">
+          <div class="age-option selected" data-age="3-6">
+            <span class="age-label">🧒 3-6岁</span>
+            <span class="age-range">幼儿阶段</span>
+          </div>
+          <div class="age-option" data-age="6-9">
+            <span class="age-label">👦 6-9岁</span>
+            <span class="age-range">小学低年级</span>
+          </div>
+          <div class="age-option" data-age="9-12">
+            <span class="age-label">🧑 9-12岁</span>
+            <span class="age-range">小学高年级</span>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <button class="btn btn-primary btn-block" onclick="startTest()" id="btnStart">
+            🚀 开始测试
+          </button>
+        </div>
+      </div>
+
+      <div class="card" id="testInfo">
+        <div class="card-title">📋 测试说明</div>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
+          🎯 共 <b>30</b> 道题，覆盖5大维度<br>
+          ⏱️ 预计 <b>10-15</b> 分钟完成<br>
+          🔄 难度自适应调整<br>
+          🧩 维度：逻辑推理 · 语言理解 · 空间想象 · 记忆力 · 创造力<br>
+          💡 测试结束后生成详细报告和成长建议
+        </p>
+      </div>
+    </div>
+
+    <!-- Test View -->
+    <div class="view" id="view-test">
+      <div class="question-header">
+        <span class="question-counter" id="qCounter">第 1 / 30 题</span>
+        <span class="dim-tag" id="qTag"></span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+      <div class="card">
+        <div class="question-text" id="qText"></div>
+        <img class="question-image" id="qImage" style="display:none;" alt="">
+        <div class="options-list" id="qOptions"></div>
+      </div>
+    </div>
+
+    <!-- Report View -->
+    <div class="view" id="view-report">
+      <div class="card" id="reportContent"></div>
+    </div>
+
+    <!-- History View -->
+    <div class="view" id="view-history">
+      <div id="historyList"></div>
+    </div>
+
+    <!-- Trend View -->
+    <div class="view" id="view-trend">
+      <div id="trendContent"></div>
+    </div>
+
+    <!-- Kids View -->
+    <div class="view" id="view-kids">
+      <div id="kidsList"></div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:0 16px 12px;font-size:11px;color:#bbb;">
+  <a href="/admin" style="color:#ccc;text-decoration:none;">📊 数据统计</a>
+</div>
+
+<!-- Add Child Modal -->
+<div class="modal-mask" id="childModal" style="display:none;">
+  <div class="modal-content">
+    <div class="modal-title" id="childModalTitle">添加宝贝</div>
+    <div class="form-group">
+      <label class="form-label">名字</label>
+      <input class="form-input" id="childName" placeholder="请输入宝贝名字" maxlength="10">
+    </div>
+    <div class="form-group">
+      <label class="form-label">性别</label>
+      <select class="form-select" id="childGender">
+        <option value="boy">👦 男孩</option>
+        <option value="girl">👧 女孩</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">出生年份</label>
+      <select class="form-select" id="childBirthYear"></select>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:8px;">
+      <button class="btn btn-outline btn-block" onclick="closeChildModal()">取消</button>
+      <button class="btn btn-primary btn-block" onclick="saveChild()">保存</button>
+    </div>
+  </div>
+</div>
+
+<script src="questions_data.js"></script>
+<script>
+'use strict';
+
+// ==================== Constants ====================
+const DIMENSIONS = ['logic', 'language', 'spatial', 'memory', 'creativity'];
+const DIM_NAMES = { logic: '逻辑推理', language: '语言理解', spatial: '空间想象', memory: '记忆力', creativity: '创造力' };
+const DIM_COLORS = { logic: '#FF6B6B', language: '#4ECDC4', spatial: '#45B7D1', memory: '#FFA07A', creativity: '#98D8C8' };
+const DIM_ICONS = { logic: '🧩', language: '📖', spatial: '🏗️', memory: '🧠', creativity: '🎨' };
+const AGE_RANGES = [
+  { key: '3-6', label: '3-6岁', lo: 3, hi: 6 },
+  { key: '6-9', label: '6-9岁', lo: 6, hi: 9 },
+  { key: '9-12', label: '9-12岁', lo: 9, hi: 12 }
+];
+
+const TYPE_DATA = {
+  all_round: { name: '全能学霸', tag: '全面发展', emoji: '🌟' },
+  future_engineer: { name: '未来工程师', tag: '逻辑超群', emoji: '🔧' },
+  art_youth: { name: '文艺少年', tag: '创造力爆棚', emoji: '🎨' },
+  logic_master: { name: '逻辑大师', tag: '推理高手', emoji: '🧩' },
+  spatial_explorer: { name: '空间探索者', tag: '空间感知力强', emoji: '🏗️' },
+  little_speaker: { name: '小小演说家', tag: '语言天赋出众', emoji: '🎤' },
+  memory_expert: { name: '记忆达人', tag: '记忆力超强', emoji: '🎯' },
+  creative_artist: { name: '创意艺术家', tag: '想象力丰富', emoji: '🖍️' }
+};
+
+// ==================== State ====================
+let state = {
+  currentTab: 'home',
+  selectedChildId: null,
+  selectedAge: '3-6',
+  testSession: null,
+  currentReport: null
+};
+
+// ==================== Storage ====================
+const STORE = {
+  get(key) {
+    try { return JSON.parse(localStorage.getItem('iq_test_' + key)); } catch(e) { return null; }
+  },
+  set(key, val) {
+    localStorage.setItem('iq_test_' + key, JSON.stringify(val));
+  },
+  getChildren() { return this.get('children') || []; },
+  setChildren(list) { this.set('children', list); },
+  getReports(childId) { return this.get('reports_' + childId) || []; },
+  addReport(childId, report) {
+    const list = this.getReports(childId);
+    list.push(report);
+    this.set('reports_' + childId, list);
+  },
+  getTestSession() { return this.get('testSession'); },
+  saveTestSession(s) { this.set('testSession', s); },
+  clearTestSession() { this.remove('testSession'); },
+  remove(key) { localStorage.removeItem('iq_test_' + key); }
+};
+
+// ==================== Question Parser ====================
+// Compact format: [qid, dim, diff, ageLo, ageHi, title, opt1_text, opt1_score, ...]
+function parseQuestions(raw) {
+  return raw.map(item => ({
+    questionId: item[0],
+    dimension: item[1],
+    difficulty: item[2],
+    ageRange: [item[3], item[4]],
+    content: {
+      title: item[5],
+      type: 'text-choice',
+      options: (() => {
+        const opts = [];
+        for (let i = 6; i < item.length; i += 2) {
+          opts.push({ text: item[i], score: item[i + 1], label: String.fromCharCode(65 + (i - 6) / 2) });
+        }
+        return opts;
+      })()
+    }
+  }));
+}
+
+let ALL_QUESTIONS = null;
+
+function getQuestionBank() {
+  if (!ALL_QUESTIONS) {
+    ALL_QUESTIONS = parseQuestions(QUESTION_BANK);
+  }
+  return ALL_QUESTIONS;
+}
+
+// ==================== Test Engine ====================
+function selectQuestions(ageLo, ageHi) {
+  const bank = getQuestionBank();
+  const eligible = bank.filter(q =>
+    q.ageRange[0] <= ageHi && q.ageRange[1] >= ageLo
+  );
+
+  const selected = [];
+  const dimOrder = ['logic', 'language', 'spatial', 'memory', 'creativity'];
+  const used = new Set();
+
+  let difficulty = 1;
+  for (let i = 0; i < 30; i++) {
+    const dim = dimOrder[i % 5];
+    const candidates = eligible.filter(q =>
+      q.dimension === dim && q.difficulty === difficulty && !used.has(q.questionId)
+    );
+    if (candidates.length > 0) {
+      const q = candidates[Math.floor(Math.random() * candidates.length)];
+      selected.push({ ...q, orderIndex: i });
+      used.add(q.questionId);
+    }
+    // Every 5 questions, consider difficulty adjustment (will be done dynamically)
+    if ((i + 1) % 5 === 0) {
+      difficulty = Math.min(3, difficulty + 1);
+    }
+  }
+  return selected;
+}
+
+function getNextQuestion(session) {
+  const nextIdx = session.currentIndex;
+  if (nextIdx >= session.questions.length) return null;
+
+  // Adaptive difficulty
+  if (nextIdx > 0 && nextIdx % 5 === 0) {
+    const recent = session.answers.slice(-5);
+    const correct = recent.filter(a => a.correct).length;
+    if (correct >= 4 && session.currentDifficulty < 3) {
+      session.currentDifficulty++;
+    } else if (correct <= 2 && session.currentDifficulty > 1) {
+      session.currentDifficulty = Math.max(1, session.currentDifficulty - 1);
+    }
+    // Re-select remaining questions at new difficulty
+    reselectRemaining(session);
+  }
+
+  return session.questions[nextIdx];
+}
+
+function reselectRemaining(session) {
+  const bank = getQuestionBank();
+  const remaining = 30 - session.currentIndex;
+  const dimOrder = ['logic', 'language', 'spatial', 'memory', 'creativity'];
+  const used = new Set(session.questions.slice(0, session.currentIndex).map(q => q.questionId));
+
+  const eligible = bank.filter(q =>
+    q.ageRange[0] <= session.ageHi && q.ageRange[1] >= session.ageLo &&
+    q.difficulty === session.currentDifficulty && !used.has(q.questionId)
+  );
+
+  for (let i = session.currentIndex; i < 30; i++) {
+    const dim = dimOrder[i % 5];
+    const candidates = eligible.filter(q => q.dimension === dim && !used.has(q.questionId));
+    if (candidates.length > 0) {
+      const q = candidates[Math.floor(Math.random() * candidates.length)];
+      session.questions[i] = { ...q, orderIndex: i };
+      used.add(q.questionId);
+    }
+  }
+}
+
+function calculateReport(session) {
+  const answers = session.answers;
+  const totalAnswered = answers.length;
+
+  // Dimension scores
+  const dimScores = {};
+  const dimDetails = {};
+  DIMENSIONS.forEach(d => {
+    const dimAnswers = answers.filter(a => a.dimension === d);
+    const totalScore = dimAnswers.reduce((sum, a) => sum + a.score, 0);
+    const maxPossible = dimAnswers.length * 3;
+    dimScores[d] = dimAnswers.length > 0 ? Math.round((totalScore / maxPossible) * 100) : 0;
+    dimDetails[d] = {
+      name: DIM_NAMES[d],
+      score: dimScores[d],
+      correct: dimAnswers.filter(a => a.correct).length,
+      answered: dimAnswers.length,
+      accuracy: dimAnswers.length > 0 ? Math.round((dimAnswers.filter(a => a.correct).length / dimAnswers.length) * 100) : 0
+    };
+  });
+
+  // Total score
+  const totalScore = Math.round(Object.values(dimScores).reduce((a, b) => a + b, 0) / 5);
+
+  // Intelligence type
+  const sorted = DIMENSIONS.map(d => ({ dim: d, score: dimScores[d] }))
+    .sort((a, b) => b.score - a.score);
+  const topDim = sorted[0];
+  const secondDim = sorted[1];
+  const gap = topDim.score - secondDim.score;
+
+  let intelType;
+  if (gap <= 8) {
+    intelType = { id: 'all_round', ...TYPE_DATA.all_round };
+  } else {
+    const typeMap = {
+      logic: 'logic_master', language: 'little_speaker', spatial: 'spatial_explorer',
+      memory: 'memory_expert', creativity: 'creative_artist'
+    };
+    intelType = { id: typeMap[topDim.dim], ...TYPE_DATA[typeMap[topDim.dim]] };
+  }
+
+  // Suggestions
+  const suggestions = [];
+  const strengths = sorted.filter(d => d.score >= 70);
+  const weaknesses = sorted.filter(d => d.score < 50);
+
+  if (strengths.length > 0) {
+    suggestions.push({
+      type: 'strength', title: '💪 优势维度',
+      text: strengths.map(d => DIM_NAMES[d.dim]).join('、') + '表现优秀，建议继续强化和培养。'
+    });
+  }
+  if (weaknesses.length > 0) {
+    suggestions.push({
+      type: 'weakness', title: '🎯 发展空间',
+      text: weaknesses.map(d => DIM_NAMES[d.dim]).join('、') + '有提升空间，可以通过针对性训练改善。'
+    });
+  }
+
+  // Development tips
+  const tips = [];
+  const tipMap = {
+    logic: '多做拼图、数独、棋类游戏，培养逻辑推理能力。',
+    language: '多读故事书、鼓励讲故事、参加朗诵活动。',
+    spatial: '玩乐高积木、折纸、画立体图形，锻炼空间想象力。',
+    memory: '玩记忆卡片游戏、背古诗、复述故事，训练记忆力。',
+    creativity: '自由绘画、手工制作、创编故事，激发创造力。'
+  };
+  DIMENSIONS.forEach(d => {
+    tips.push({ dimension: d, name: DIM_NAMES[d], tip: tipMap[d], score: dimScores[d] });
+  });
+
+  return {
+    reportId: 'r_' + Date.now(),
+    childId: session.childId,
+    childName: session.childName,
+    ageRange: session.ageRange,
+    totalScore,
+    dimensionScores: dimScores,
+    dimensionDetails: dimDetails,
+    intelligenceType: intelType,
+    suggestions,
+    tips,
+    totalQuestions: totalAnswered,
+    correctCount: answers.filter(a => a.correct).length,
+    createdAt: new Date().toISOString(),
+    duration: Math.round((Date.now() - session.startTime) / 1000)
+  };
+}
+
+// ==================== UI Helpers ====================
+function showToast(msg) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2000);
+}
+
+function switchTab(tab) {
+  state.currentTab = tab;
+  document.querySelectorAll('.tab-item').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-' + tab).classList.add('active');
+
+  if (tab === 'history') renderHistory();
+  if (tab === 'trend') renderTrend();
+  if (tab === 'kids') renderKidsList();
+  if (tab === 'home') renderHome();
+}
+
+function switchView(viewName) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-' + viewName).classList.add('active');
+  // Hide tab bar during test and report
+  const tabBar = document.getElementById('tabBar');
+  if (viewName === 'test' || viewName === 'report') {
+    tabBar.style.display = 'none';
+  } else {
+    tabBar.style.display = 'flex';
+  }
+}
+
+function formatDate(isoStr) {
+  const d = new Date(isoStr);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  const h = String(d.getHours()).padStart(2, '0');
+  const min = String(d.getMinutes()).padStart(2, '0');
+  return `${y}-${m}-${day} ${h}:${min}`;
+}
+
+function formatDateShort(isoStr) {
+  const d = new Date(isoStr);
+  return `${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+}
+
+// ==================== Home Page ====================
+function renderHome() {
+  const children = STORE.getChildren();
+  const listEl = document.getElementById('childrenList');
+
+  if (children.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">👶</div>
+        <p>还没有添加宝贝哦~</p>
+        <p style="font-size:12px;margin-top:4px;">点击下方按钮添加</p>
+      </div>`;
+    document.getElementById('ageSelectCard').style.display = 'none';
+    state.selectedChildId = null;
+  } else {
+    listEl.innerHTML = children.map((c, i) => {
+      const reports = STORE.getReports(c.id);
+      const bgColors = ['#FFE0B2', '#C8E6C9', '#BBDEFB', '#F8BBD0', '#D1C4E9', '#FFCCBC'];
+      const emojis = ['🐼', '🐰', '🦊', '🐨', '🐸', '🐶'];
+      const isSelected = state.selectedChildId === c.id;
+      return `
+        <div class="child-card ${isSelected ? 'selected' : ''}" onclick="selectChild('${c.id}')"
+             style="${isSelected ? 'border:2px solid var(--primary);background:var(--primary-light);' : ''}">
+          <div class="child-avatar" style="background:${bgColors[i % bgColors.length]}">${emojis[i % emojis.length]}</div>
+          <div class="child-info">
+            <div class="child-name">${c.name} ${c.gender === 'boy' ? '👦' : '👧'}</div>
+            <div class="child-meta">${c.birthYear}年出生</div>
+          </div>
+          <div class="child-test-count">${reports.length} 次测试</div>
+          <button class="btn btn-danger btn-small" onclick="event.stopPropagation();deleteChild('${c.id}')" style="margin-left:4px;">删除</button>
+        </div>`;
+    }).join('');
+
+    document.getElementById('ageSelectCard').style.display = 'block';
+  }
+}
+
+function selectChild(id) {
+  state.selectedChildId = id;
+  renderHome();
+}
+
+function deleteChild(id) {
+  if (!confirm('确定要删除这个宝贝和所有测试记录吗？此操作不可恢复！')) return;
+  const children = STORE.getChildren().filter(c => c.id !== id);
+  STORE.setChildren(children);
+  STORE.remove('reports_' + id);
+  if (state.selectedChildId === id) state.selectedChildId = null;
+  renderHome();
+}
+
+// Age selector
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#ageOptions .age-option').forEach(el => {
+    el.addEventListener('click', function() {
+      document.querySelectorAll('#ageOptions .age-option').forEach(e => e.classList.remove('selected'));
+      this.classList.add('selected');
+      state.selectedAge = this.dataset.age;
+    });
+  });
+});
+
+// Tab switching
+document.querySelectorAll('.tab-item').forEach(el => {
+  el.addEventListener('click', function() {
+    switchTab(this.dataset.tab);
+  });
+});
+
+// ==================== Add Child Modal ====================
+function showAddChildModal(id) {
+  const modal = document.getElementById('childModal');
+  modal.style.display = 'flex';
+  document.getElementById('childName').value = '';
+
+  // Populate birth years
+  const yearSelect = document.getElementById('childBirthYear');
+  const currentYear = new Date().getFullYear();
+  yearSelect.innerHTML = '';
+  for (let y = currentYear - 2; y >= currentYear - 14; y--) {
+    yearSelect.innerHTML += `<option value="${y}">${y}年</option>`;
+  }
+
+  document.getElementById('childModalTitle').textContent = '添加宝贝';
+  document.getElementById('childName').focus();
+}
+
+function closeChildModal() {
+  document.getElementById('childModal').style.display = 'none';
+}
+
+function saveChild() {
+  const name = document.getElementById('childName').value.trim();
+  if (!name) { showToast('请输入宝贝名字'); return; }
+  const gender = document.getElementById('childGender').value;
+  const birthYear = parseInt(document.getElementById('childBirthYear').value);
+
+  const children = STORE.getChildren();
+  children.push({
+    id: 'c_' + Date.now(),
+    name,
+    gender,
+    birthYear,
+    createdAt: new Date().toISOString()
+  });
+  STORE.setChildren(children);
+  state.selectedChildId = children[children.length - 1].id;
+  closeChildModal();
+  renderHome();
+  showToast('宝贝已添加！');
+}
+
+// ==================== Test ====================
+function startTest() {
+  const children = STORE.getChildren();
+  if (!state.selectedChildId) {
+    showToast('请先选择或添加宝贝');
+    return;
+  }
+  const child = children.find(c => c.id === state.selectedChildId);
+  if (!child) { showToast('请先选择宝贝'); return; }
+
+  const age = AGE_RANGES.find(a => a.key === state.selectedAge);
+  if (!age) { showToast('请选择年龄段'); return; }
+
+  // Check for saved session
+  const saved = STORE.getTestSession();
+  if (saved && saved.childId === state.selectedChildId) {
+    if (confirm('检测到上次未完成的测试，是否继续？')) {
+      state.testSession = saved;
+      state.testSession.resumed = true;
+      renderTestQuestion();
+      switchView('test');
+      return;
+    }
+  }
+
+  // New test
+  const questions = selectQuestions(age.lo, age.hi);
+  state.testSession = {
+    childId: child.id,
+    childName: child.name,
+    ageRange: state.selectedAge,
+    ageLo: age.lo,
+    ageHi: age.hi,
+    questions,
+    answers: [],
+    currentIndex: 0,
+    currentDifficulty: 1,
+    startTime: Date.now(),
+    resumed: false
+  };
+  STORE.saveTestSession(state.testSession);
+
+  switchView('test');
+  renderTestQuestion();
+}
+
+function renderTestQuestion() {
+  const session = state.testSession;
+  if (!session) return;
+
+  const question = getNextQuestion(session);
+  if (!question) {
+    finishTest();
+    return;
+  }
+
+  const current = question;
+  session._currentQuestion = current;
+
+  document.getElementById('qCounter').textContent = `第 ${session.currentIndex + 1} / 30 题`;
+  document.getElementById('qTag').textContent = DIM_NAMES[current.dimension] + ' · ' + '⭐'.repeat(current.difficulty);
+  document.getElementById('qTag').className = 'dim-tag ' + current.dimension;
+  document.getElementById('progressFill').style.width = ((session.currentIndex / 30) * 100) + '%';
+  document.getElementById('qText').textContent = current.content.title;
+
+  const imgEl = document.getElementById('qImage');
+  imgEl.style.display = 'none';
+
+  const opts = current.content.options;
+  const letters = ['A', 'B', 'C', 'D'];
+  const optionsEl = document.getElementById('qOptions');
+  optionsEl.innerHTML = opts.map((o, i) => `
+    <div class="option-item" data-idx="${i}" onclick="selectAnswer(${i})">
+      <span class="option-letter">${letters[i]}</span>
+      <span class="option-text">${o.text}</span>
+    </div>
+  `).join('');
+
+  // Keyboard support
+  document.onkeydown = function(e) {
+    const idx = e.key.toLowerCase().charCodeAt(0) - 97;
+    if (idx >= 0 && idx < opts.length && !session._feedbackShown) {
+      selectAnswer(idx);
+    }
+  };
+}
+
+function selectAnswer(idx) {
+  const session = state.testSession;
+  if (!session || session._feedbackShown) return;
+
+  const question = session._currentQuestion;
+  const opts = question.content.options;
+  const selected = opts[idx];
+
+  const correctScore = Math.max(...opts.map(o => o.score));
+  const isCorrect = selected.score === correctScore;
+
+  // Show feedback
+  session._feedbackShown = true;
+  const items = document.querySelectorAll('#qOptions .option-item');
+  items.forEach((item, i) => {
+    if (opts[i].score === correctScore) item.classList.add('correct');
+    if (i === idx && !isCorrect) item.classList.add('wrong');
+    item.style.pointerEvents = 'none';
+  });
+
+  // Record answer
+  session.answers.push({
+    questionId: question.questionId,
+    dimension: question.dimension,
+    difficulty: question.difficulty,
+    selectedIndex: idx,
+    selectedText: selected.text,
+    correct: isCorrect,
+    score: selected.score
+  });
+
+  // Show feedback overlay
+  showFeedback(isCorrect, () => {
+    session._feedbackShown = false;
+    session.currentIndex++;
+    STORE.saveTestSession(session);
+    renderTestQuestion();
+  });
+}
+
+function showFeedback(isCorrect, callback) {
+  const overlay = document.createElement('div');
+  overlay.className = 'feedback-overlay';
+  overlay.innerHTML = isCorrect
+    ? '<div class="feedback-correct">✅ 回答正确！太棒了！</div>'
+    : '<div class="feedback-wrong">❌ 继续加油！</div>';
+  document.body.appendChild(overlay);
+
+  setTimeout(() => {
+    overlay.remove();
+    callback();
+  }, 1200);
+}
+
+function finishTest() {
+  const session = state.testSession;
+  if (!session) return;
+
+  const report = calculateReport(session);
+  STORE.addReport(session.childId, report);
+  STORE.clearTestSession();
+  state.currentReport = report;
+  state.testSession = null;
+
+  switchView('report');
+  renderReport(report);
+  showToast('测试完成！');
+}
+
+// ==================== Report ====================
+function renderReport(report) {
+  const container = document.getElementById('reportContent');
+  const scores = report.dimensionScores;
+
+  let gradeHTML = '';
+  if (report.totalScore >= 90) gradeHTML = '<span class="score-grade" style="background:#E8F5E9;color:#2E7D32;">🏆 优秀</span>';
+  else if (report.totalScore >= 70) gradeHTML = '<span class="score-grade" style="background:#FFF3E0;color:#E65100;">👍 良好</span>';
+  else gradeHTML = '<span class="score-grade" style="background:#FFEBEE;color:#C62828;">📚 需提升</span>';
+
+  const dimBars = DIMENSIONS.map(d => `
+    <div class="dim-score-row">
+      <span class="dim-score-icon">${DIM_ICONS[d]}</span>
+      <span class="dim-score-name">${DIM_NAMES[d]}</span>
+      <div class="dim-score-bar-wrap">
+        <div class="dim-score-bar" style="width:${scores[d]}%;background:${DIM_COLORS[d]}">
+          <span class="dim-score-val">${scores[d]}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  const suggestionCards = (report.suggestions || []).map(s => `
+    <div class="suggestion-card ${s.type}">
+      <strong>${s.title}</strong>
+      <p style="font-size:13px;margin-top:4px;">${s.text}</p>
+    </div>
+  `).join('');
+
+  const isUnlocked = localStorage.getItem('tips_unlocked') === '1';
+  const tipsPreviewHTML = (report.tips || []).map(t => `
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 0;border-bottom:1px solid #f0f0f0;filter:blur(5px);user-select:none;">
+      <span style="font-size:18px;">${DIM_ICONS[t.dimension]}</span>
+      <div>
+        <strong style="font-size:13px;">${t.name}（${t.score}分）</strong>
+        <p style="font-size:12px;color:var(--text-secondary);margin-top:2px;">${t.tip}</p>
+      </div>
+    </div>
+  `).join('');
+  const tipsFullHTML = (report.tips || []).map(t => `
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 0;border-bottom:1px solid #f0f0f0;">
+      <span style="font-size:18px;">${DIM_ICONS[t.dimension]}</span>
+      <div>
+        <strong style="font-size:13px;">${t.name}（${t.score}分）</strong>
+        <p style="font-size:12px;color:var(--text-secondary);margin-top:2px;">${t.tip}</p>
+      </div>
+    </div>
+  `).join('');
+  const tipsHTML = isUnlocked ? tipsFullHTML : `
+    <div class="tips-locked">
+      <div class="tips-locked-content">
+        <div class="tips-lock-icon">🔒</div>
+        <div class="tips-lock-title">成长小贴士已锁定</div>
+        <p class="tips-lock-desc">创作不易，希望支持一下作者~<br>1元即可免费领取成长小贴士，为孩子的发展提供明确指导。</p>
+        <button class="btn btn-primary tips-unlock-btn" onclick="showPayModal()">💎 1元立即解锁</button>
+      </div>
+      <div class="tips-blur-layer">${tipsPreviewHTML}</div>
+    </div>
+  `;
+
+  const duration = Math.floor((report.duration || 0) / 60);
+  const durationStr = duration > 0 ? `${duration}分${(report.duration || 0) % 60}秒` : `${report.duration || 0}秒`;
+
+  container.innerHTML = `
+    <div class="score-hero">
+      <div class="score-big">${report.totalScore}</div>
+      <div class="score-label">综合评分（满分100）</div>
+      ${gradeHTML}
+    </div>
+    <div class="type-badge" style="margin:12px auto;display:flex;justify-content:center;width:fit-content;">
+      ${report.intelligenceType.emoji} ${report.intelligenceType.name} · ${report.intelligenceType.tag}
+    </div>
+    <div style="display:flex;gap:12px;justify-content:center;margin-bottom:12px;font-size:12px;color:var(--text-secondary);">
+      <span>✅ ${report.correctCount}/${report.totalQuestions} 正确</span>
+      <span>⏱ ${durationStr}</span>
+    </div>
+
+    <!-- Radar Chart -->
+    <div class="radar-container" style="margin-bottom:16px;">
+      <div style="font-weight:600;margin-bottom:12px;">📊 能力雷达图</div>
+      <canvas id="radarCanvas" width="340" height="340"></canvas>
+    </div>
+
+    <!-- Dimension Details -->
+    <div class="card">
+      <div class="card-title">📋 各维度得分</div>
+      ${dimBars}
+    </div>
+
+    <!-- Suggestions -->
+    <div class="card">
+      <div class="card-title">💡 评估建议</div>
+      ${suggestionCards || '<p style="font-size:13px;color:var(--text-secondary);">继续加油！</p>'}
+    </div>
+
+    <!-- Tips -->
+    <div class="card">
+      <div class="card-title">🌱 成长小贴士</div>
+      ${tipsHTML}
+    </div>
+
+    <!-- Actions -->
+    <div style="display:flex;gap:10px;margin-top:8px;">
+      <button class="btn btn-primary btn-block" onclick="goHome()">🏠 返回首页</button>
+      <button class="btn btn-outline btn-block" onclick="shareResult()">📤 分享结果</button>
+    </div>
+  `;
+
+  // Draw radar chart after DOM update
+  setTimeout(() => drawRadarChart(report), 200);
+}
+
+// ==================== Payment / Unlock ====================
+function isTipsUnlocked() {
+  return localStorage.getItem('tips_unlocked') === '1';
+}
+
+function showPayModal() {
+  document.getElementById('payModal').classList.add('active');
+  selectPay('alipay');
+}
+
+function closePayModal() {
+  document.getElementById('payModal').classList.remove('active');
+}
+
+function closePayModalOnOverlay(e) {
+  if (e.target.id === 'payModal') closePayModal();
+}
+
+function selectPay(method) {
+  document.getElementById('payAli').classList.toggle('active', method === 'alipay');
+  document.getElementById('payWx').classList.toggle('active', method === 'wechat');
+  const qrImg = method === 'alipay' ? '/qr/alipay.jpg' : '/qr/wechat.jpg';
+  document.getElementById('payQR').innerHTML = `<img src="${qrImg}" alt="收款码">`;
+}
+
+function confirmPay() {
+  localStorage.setItem('tips_unlocked', '1');
+  closePayModal();
+  // Re-render current report if available
+  if (state.currentReport) {
+    renderReport(state.currentReport);
+  }
+  showToast('🎉 解锁成功！祝宝贝健康成长~');
+  // Report payment to backend
+  fetch('/api/track', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ event: 'pay', amount: 1 })
+  }).catch(() => {});
+}
+
+function drawRadarChart(report) {
+  const canvas = document.getElementById('radarCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const width = canvas.width;
+  const height = canvas.height;
+  const cx = width / 2;
+  const cy = height / 2;
+  const radius = Math.min(width, height) / 2 - 50;
+
+  const dims = DIMENSIONS;
+  const dimLabels = DIMENSIONS.map(d => DIM_NAMES[d]);
+  const dimColors = DIMENSIONS.map(d => DIM_COLORS[d]);
+  const scores = report.dimensionScores;
+  const levels = 5;
+
+  ctx.clearRect(0, 0, width, height);
+
+  // Grid
+  for (let level = levels; level > 0; level--) {
+    const r = (radius * level) / levels;
+    ctx.beginPath();
+    for (let i = 0; i < 5; i++) {
+      const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+      const x = cx + r * Math.cos(angle);
+      const y = cy + r * Math.sin(angle);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = level === levels ? '#ddd' : '#eee';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Axis
+  for (let i = 0; i < 5; i++) {
+    const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + radius * Math.cos(angle), cy + radius * Math.sin(angle));
+    ctx.strokeStyle = '#eee';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Data area
+  ctx.beginPath();
+  const points = [];
+  for (let i = 0; i < 5; i++) {
+    const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+    const score = scores[dims[i]] || 0;
+    const r = (radius * score) / 100;
+    const x = cx + r * Math.cos(angle);
+    const y = cy + r * Math.sin(angle);
+    points.push({ x, y });
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(255, 149, 0, 0.15)';
+  ctx.fill();
+  ctx.strokeStyle = '#FF9500';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  // Data points
+  points.forEach((p, i) => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+    ctx.fillStyle = dimColors[i];
+    ctx.fill();
+  });
+
+  // Labels
+  ctx.font = 'bold 12px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i < 5; i++) {
+    const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+    const lr = radius + 28;
+    const x = cx + lr * Math.cos(angle);
+    const y = cy + lr * Math.sin(angle);
+    ctx.fillStyle = '#666';
+    ctx.fillText(dimLabels[i], x, y);
+    ctx.fillStyle = dimColors[i];
+    ctx.font = 'bold 14px -apple-system, sans-serif';
+    ctx.fillText(scores[dims[i]], x, y + 18);
+    ctx.font = 'bold 12px -apple-system, sans-serif';
+  }
+}
+
+function goHome() {
+  switchView('home');
+  switchTab('home');
+  renderHome();
+}
+
+function viewReportFromHistory(reportId) {
+  const children = STORE.getChildren();
+  for (const child of children) {
+    const reports = STORE.getReports(child.id);
+    const report = reports.find(r => r.reportId === reportId);
+    if (report) {
+      state.currentReport = report;
+      switchView('report');
+      renderReport(report);
+      return;
+    }
+  }
+  showToast('报告未找到');
+}
+
+function shareResult() {
+  const report = state.currentReport;
+  if (!report) return;
+  const text = `我家宝贝是${report.intelligenceType.emoji}${report.intelligenceType.name}！综合评分${report.totalScore}分，来测测你家的吧~`;
+  if (navigator.share) {
+    navigator.share({ title: '儿童智力测试结果', text });
+  } else {
+    navigator.clipboard.writeText(text).then(() => showToast('已复制分享文案到剪贴板！'));
+  }
+}
+
+// ==================== History ====================
+function renderHistory() {
+  const children = STORE.getChildren();
+  const container = document.getElementById('historyList');
+
+  if (children.length === 0) {
+    container.innerHTML = '<div class="empty-state"><div class="empty-icon">📋</div><p>还没有测试记录</p></div>';
+    return;
+  }
+
+  let allReports = [];
+  children.forEach(child => {
+    const reports = STORE.getReports(child.id);
+    reports.forEach(r => {
+      allReports.push({ ...r, _childName: child.name });
+    });
+  });
+  allReports.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+  if (allReports.length === 0) {
+    container.innerHTML = '<div class="empty-state"><div class="empty-icon">📋</div><p>还没有测试记录</p></div>';
+    return;
+  }
+
+  container.innerHTML = allReports.map(r => {
+    const date = formatDate(r.createdAt);
+    const dimTags = DIMENSIONS.map(d =>
+      `<span class="hi-dim" style="background:${DIM_COLORS[d]}">${DIM_NAMES[d]}:${r.dimensionScores[d]}</span>`
+    ).join('');
+    return `
+      <div class="history-item" onclick="viewReportFromHistory('${r.reportId}')">
+        <div class="hi-top">
+          <span class="hi-date">${date}</span>
+          <span class="hi-score">${r.totalScore}分</span>
+        </div>
+        <div class="hi-type">${r.intelligenceType.emoji} ${r._childName} · ${r.intelligenceType.name} · ${r.intelligenceType.tag}</div>
+        <div class="hi-dims">${dimTags}</div>
+      </div>`;
+  }).join('');
+}
+
+// ==================== Trend ====================
+function renderTrend() {
+  const children = STORE.getChildren();
+  const container = document.getElementById('trendContent');
+
+  if (children.length === 0) {
+    container.innerHTML = '<div class="empty-state"><div class="empty-icon">📈</div><p>还没有测试记录</p></div>';
+    return;
+  }
+
+  // Show child selector
+  let childOptions = children.map(c => {
+    const reports = STORE.getReports(c.id);
+    return { ...c, reportCount: reports.length };
+  }).filter(c => c.reportCount >= 2);
+
+  if (childOptions.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">📈</div>
+        <p>需要至少2次测试才能显示趋势</p>
+        <p style="font-size:12px;margin-top:4px;">完成更多测试后再来看看吧</p>
+      </div>`;
+    return;
+  }
+
+  const selectedId = state.selectedChildId && childOptions.find(c => c.id === state.selectedChildId)
+    ? state.selectedChildId : childOptions[0].id;
+
+  const selectedChild = children.find(c => c.id === selectedId);
+  const reports = STORE.getReports(selectedId).sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+
+  const scores = reports.map(r => r.totalScore);
+  const avgScore = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+  const bestScore = Math.max(...scores);
+  const latestScore = scores[scores.length - 1];
+
+  const dimChange = DIMENSIONS.map(d => {
+    const first = reports[0].dimensionScores[d] || 0;
+    const last = reports[reports.length - 1].dimensionScores[d] || 0;
+    const change = last - first;
+    return { key: d, name: DIM_NAMES[d], color: DIM_COLORS[d], first, last, change };
+  });
+
+  const dimChangeHTML = dimChange.map(d => `
+    <div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f0f0f0;">
+      <span style="font-size:16px;">${DIM_ICONS[d.key]}</span>
+      <span style="font-size:13px;flex:1;">${d.name}</span>
+      <span style="font-size:13px;color:var(--text-secondary);">${d.first} → ${d.last}</span>
+      <span style="font-size:13px;font-weight:700;color:${d.change >= 0 ? 'var(--success)' : 'var(--danger)'};">
+        ${d.change > 0 ? '+' : ''}${d.change}
+      </span>
+    </div>
+  `).join('');
+
+  let selectorHTML = '';
+  if (childOptions.length > 1) {
+    selectorHTML = childOptions.map(c => `
+      <button class="btn ${c.id === selectedId ? 'btn-primary' : 'btn-outline'} btn-small"
+              onclick="selectTrendChild('${c.id}')">${c.name}</button>
+    `).join('');
+  }
+
+  container.innerHTML = `
+    ${selectorHTML ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">${selectorHTML}</div>` : ''}
+    <div class="card">
+      <div class="card-title">📊 ${selectedChild.name} 的趋势</div>
+      <div style="display:flex;justify-content:space-around;text-align:center;margin-bottom:16px;">
+        <div><div style="font-size:24px;font-weight:800;color:var(--primary);">${avgScore}</div><div style="font-size:11px;color:var(--text-secondary);">平均分</div></div>
+        <div><div style="font-size:24px;font-weight:800;color:var(--success);">${bestScore}</div><div style="font-size:11px;color:var(--text-secondary);">最高分</div></div>
+        <div><div style="font-size:24px;font-weight:800;color:var(--dim-spatial);">${latestScore}</div><div style="font-size:11px;color:var(--text-secondary);">最新分</div></div>
+      </div>
+      <canvas id="trendCanvas" width="340" height="260"></canvas>
+    </div>
+
+    <div class="card">
+      <div class="card-title">📈 各维度变化</div>
+      ${dimChangeHTML}
+    </div>
+  `;
+
+  setTimeout(() => drawTrendChart(reports), 200);
+}
+
+function selectTrendChild(id) {
+  state.selectedChildId = id;
+  renderTrend();
+}
+
+function drawTrendChart(reports) {
+  const canvas = document.getElementById('trendCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const width = canvas.width;
+  const height = canvas.height;
+  const padding = { top: 20, right: 15, bottom: 35, left: 35 };
+  const chartW = width - padding.left - padding.right;
+  const chartH = height - padding.top - padding.bottom;
+
+  const dims = DIMENSIONS;
+  const dimColors = DIMENSIONS.map(d => DIM_COLORS[d]);
+
+  ctx.clearRect(0, 0, width, height);
+
+  // Y-axis
+  ctx.font = '10px -apple-system, sans-serif';
+  ctx.fillStyle = '#999';
+  ctx.textAlign = 'right';
+  for (let i = 0; i <= 5; i++) {
+    const y = padding.top + (chartH * (5 - i)) / 5;
+    const val = i * 20;
+    ctx.fillText(val, padding.left - 6, y + 3);
+    ctx.beginPath();
+    ctx.moveTo(padding.left, y);
+    ctx.lineTo(width - padding.right, y);
+    ctx.strokeStyle = '#f0f0f0';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  const stepX = reports.length > 1 ? chartW / (reports.length - 1) : 0;
+
+  // Lines
+  dims.forEach((dim, di) => {
+    ctx.beginPath();
+    reports.forEach((r, i) => {
+      const score = r.dimensionScores[dim] || 0;
+      const x = padding.left + (reports.length > 1 ? stepX * i : chartW / 2);
+      const y = padding.top + chartH - (chartH * score) / 100;
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    });
+    ctx.strokeStyle = dimColors[di];
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Dots
+    reports.forEach((r, i) => {
+      const score = r.dimensionScores[dim] || 0;
+      const x = padding.left + (reports.length > 1 ? stepX * i : chartW / 2);
+      const y = padding.top + chartH - (chartH * score) / 100;
+      ctx.beginPath();
+      ctx.arc(x, y, 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = dimColors[di];
+      ctx.fill();
+    });
+  });
+
+  // X-axis labels
+  ctx.font = '10px -apple-system, sans-serif';
+  ctx.fillStyle = '#999';
+  ctx.textAlign = 'center';
+  reports.forEach((r, i) => {
+    const x = padding.left + (reports.length > 1 ? stepX * i : chartW / 2);
+    ctx.fillText(formatDateShort(r.createdAt), x, height - padding.bottom + 14);
+  });
+
+  // Legend
+  ctx.font = '10px -apple-system, sans-serif';
+  const legendY = 12;
+  const legendStartX = padding.left;
+  dims.forEach((dim, i) => {
+    const x = legendStartX + i * 62;
+    ctx.fillStyle = dimColors[i];
+    ctx.fillRect(x, legendY, 10, 10);
+    ctx.fillStyle = '#666';
+    ctx.textAlign = 'left';
+    ctx.fillText(DIM_NAMES[dim], x + 14, legendY + 8);
+  });
+}
+
+// ==================== Kids List ====================
+function renderKidsList() {
+  const children = STORE.getChildren();
+  const container = document.getElementById('kidsList');
+
+  if (children.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">👶</div>
+        <p>还没有添加宝贝</p>
+        <button class="btn btn-primary btn-small" onclick="showAddChildModal()" style="margin-top:12px;">➕ 添加宝贝</button>
+      </div>`;
+    return;
+  }
+
+  const bgColors = ['#FFE0B2', '#C8E6C9', '#BBDEFB', '#F8BBD0', '#D1C4E9', '#FFCCBC'];
+  const emojis = ['🐼', '🐰', '🦊', '🐨', '🐸', '🐶'];
+
+  container.innerHTML = `
+    <button class="btn btn-outline btn-block" onclick="showAddChildModal()" style="margin-bottom:12px;">➕ 添加宝贝</button>
+    ${children.map((c, i) => {
+      const reports = STORE.getReports(c.id);
+      const lastTest = reports.length > 0 ? reports[reports.length - 1] : null;
+      return `
+        <div class="child-card" onclick="selectChild('${c.id}');switchTab('home');" style="margin-bottom:12px;">
+          <div class="child-avatar" style="background:${bgColors[i % bgColors.length]}">${emojis[i % emojis.length]}</div>
+          <div class="child-info">
+            <div class="child-name">${c.name} ${c.gender === 'boy' ? '👦' : '👧'}</div>
+            <div class="child-meta">${c.birthYear}年出生 · ${reports.length}次测试</div>
+            ${lastTest ? `<div class="child-meta" style="color:var(--primary);">最近: ${lastTest.totalScore}分 · ${lastTest.intelligenceType.name}</div>` : ''}
+          </div>
+          <button class="btn btn-danger btn-small" onclick="event.stopPropagation();deleteChild('${c.id}')">删除</button>
+        </div>`;
+    }).join('')}
+  `;
+}
+
+// ==================== Init ====================
+document.addEventListener('DOMContentLoaded', () => {
+  renderHome();
+
+  // Close modal on mask click
+  document.getElementById('childModal').addEventListener('click', function(e) {
+    if (e.target === this) closeChildModal();
+  });
+
+  // Check for unfinished test
+  const saved = STORE.getTestSession();
+  if (saved && saved.currentIndex < 30) {
+    const children = STORE.getChildren();
+    if (children.find(c => c.id === saved.childId)) {
+      state.selectedChildId = saved.childId;
+      state.selectedAge = saved.ageRange;
+      renderHome();
+    }
+  }
+});
+  
+  // ===== 访客统计 =====
+  (function trackVisitor() {
+    fetch('/api/track', { method: 'POST' })
+      .then(r => r.json())
+      .then(data => {
+        if (data && data.total) {
+          document.getElementById('visitorCount').textContent = data.total.toLocaleString();
+        }
+      })
+      .catch(() => {
+        document.getElementById('visitorCount').textContent = '—';
+      });
+  })();
+</script>
+
+<!-- Payment Modal -->
+<div id="payModal" class="modal-overlay" onclick="closePayModalOnOverlay(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-title">💎 解锁成长小贴士</div>
+    <div class="modal-subtitle">创作不易，感谢您的支持~ 仅需 1 元</div>
+    <div class="pay-options">
+      <div class="pay-option active" id="payAli" onclick="selectPay('alipay')">
+        <div style="font-size:24px;">🔵</div>
+        <div>支付宝</div>
+      </div>
+      <div class="pay-option" id="payWx" onclick="selectPay('wechat')">
+        <div style="font-size:24px;">🟢</div>
+        <div>微信支付</div>
+      </div>
+    </div>
+    <div class="pay-qr-wrap" id="payQR">
+      <img src="/qr/alipay.jpg" alt="支付宝收款码">
+    </div>
+    <div class="pay-hint">请使用对应 App 扫码支付 1 元，完成后点击下方按钮</div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" onclick="closePayModal()">取消</button>
+      <button class="btn pay-done-btn" onclick="confirmPay()">✅ 我已支付 1 元</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
